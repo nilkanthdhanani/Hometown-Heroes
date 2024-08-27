@@ -1,0 +1,23 @@
+@import "../../../styles/";
+
+.hero-banner {
+    padding: 67px 0 69px 0;
+
+    .hero-box {
+        display: flex;
+        align-items: flex-end;
+        gap: 110px;
+
+        h1 {
+            @include heroHead;
+        }
+
+        p {
+            @include heroPera;
+        }
+
+        img {
+            max-width: 320px;
+        }
+    }
+}

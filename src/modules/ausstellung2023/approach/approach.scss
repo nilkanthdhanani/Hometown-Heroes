@@ -1,0 +1,45 @@
+@import '../../../styles/';
+
+.approach {
+    margin-top: -157px;
+
+    .approach-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 53px;
+
+        .approach-div1 {
+            max-width: 618px;
+
+            .approach-div1-head {
+                display: flex;
+                gap: 41px;
+                margin-bottom: 39px;
+
+                h2 {
+                    @include aussHead;
+                    min-width: 219px;
+                }
+
+                img {
+                    width: 357px;
+                    max-height: 511px;
+                    object-fit: cover;
+                }
+            }
+
+            p {
+                @include aussPera;
+            }
+        }
+
+        .approach-div2 {
+            margin-right: 17px;
+
+            img {
+                width: 509px;
+            }
+        }
+    }
+}

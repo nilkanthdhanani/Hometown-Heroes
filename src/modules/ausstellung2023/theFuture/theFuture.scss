@@ -1,0 +1,24 @@
+@import '../../../styles/';
+
+.the-future {
+    max-width: 1107px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        @include aussHeadFut;
+
+        &:last-child {
+            line-height: 107px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        margin: 5px 0;
+        @include aussPera;
+    }
+}

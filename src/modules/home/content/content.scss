@@ -1,0 +1,12 @@
+@import "../../../styles/";
+
+.content {
+    padding: 69px 0;
+
+    p {
+        @include font20b;
+        text-align: center;
+        max-width: 961px;
+        margin: 0 auto;
+    }
+}

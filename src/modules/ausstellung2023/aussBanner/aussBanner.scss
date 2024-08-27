@@ -1,0 +1,30 @@
+@import "../../../styles/";
+
+.auss-banner {
+    margin: 38px 0 121px 0;
+
+    .auss-banner-div {
+        display: flex;
+        align-items: flex-end;
+        gap: 35px;
+
+        h1 {
+            @include aussHeadm;
+        }
+
+        .auss-banner-div-intro {
+            h1 {
+                line-height: 71px;
+                margin-bottom: 78px;
+            }
+            
+            p {
+                @include aussPera;
+            }
+        }
+
+        img {
+            max-width: 387px;
+        }
+    }
+}

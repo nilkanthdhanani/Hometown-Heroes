@@ -1,0 +1,52 @@
+@import "../../../styles/";
+
+.the-book {
+    margin: 100px 0;
+
+    .the-book-div {
+        max-width: 1164px;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+
+        h2 {
+            max-width: 266px;
+            text-align: right;
+            margin: 0;
+        }
+
+        img {
+            width: 354px;
+        }
+
+        .the-book-div-text {
+            width: 484px;
+
+            p {
+                margin-bottom: 30px;
+                @include aussPera;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    h2 {
+        @include aussHead;
+        text-align: center;
+        margin: 100px 0 60px 0;
+    }
+
+    .the-image-book {
+        max-width: 1003px;
+        margin: 0 auto;
+        @include grid3c;
+        gap: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

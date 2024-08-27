@@ -1,0 +1,52 @@
+@import "../../../styles/";
+
+.auktion {
+    .auktion-div {
+        h2 {
+            @include font38b;
+            text-align: center;
+            font-family: var(--font-family-inline);
+        }
+    }
+
+    .auktion-timer {
+        @include flex-center;
+        gap: 15.5px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 37%;
+            left: 0;
+            width: 100%;
+            height: 1.55px;
+            background-color: var(--font-color);
+        }
+
+        .auktion-timer-div {
+            position: relative;
+            z-index: 2;
+            
+            .auktion-timer-text {
+                width: 93px;
+                min-height: 152px;
+                @include flex-center;
+                background-color: var(--font-color);
+                border-radius: 10.7px;
+                margin-bottom: 17.02px;
+
+                h3 {
+                    @include font47b;
+                    color: var(--bgcolor);
+                }
+            }
+
+            span {
+                display: block;
+                @include font15b;
+                text-align: center;
+            }
+        }
+    }
+}

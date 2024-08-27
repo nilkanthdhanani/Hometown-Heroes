@@ -1,0 +1,26 @@
+@import "../../styles/";
+
+header {
+    padding: 40px 0;
+
+    .header-div {
+        @include flex-between;
+
+        svg {
+            display: block;
+            fill: var(--color-black);
+        }
+
+        .header-links {
+            @include flex;
+            gap: 38px;
+
+            a {
+                display: block;
+                @include font20H;
+                color: var(--color-black);
+                font-family: var(--font-family-inline);
+            }
+        }
+    }
+}

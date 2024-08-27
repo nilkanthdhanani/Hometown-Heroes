@@ -1,0 +1,31 @@
+@import "../../styles";
+
+footer {
+    padding-bottom: 30px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 69px;
+
+    .footer-links {
+        @include flex;
+
+        a {
+            min-width: 96px;
+            display: block;
+            text-align: center;
+            @include footerFont;
+            color: var(--font-color);
+        }
+    }
+
+    .footer-logo {
+        @include flex;
+        flex-direction: column;
+        gap: 12.64px;
+        
+        svg {
+            display: block;
+            fill: var(--font-color);
+        }
+    }
+}

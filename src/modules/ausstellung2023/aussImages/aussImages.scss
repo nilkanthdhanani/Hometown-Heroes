@@ -1,0 +1,29 @@
+@import "../../../styles/";
+
+.auss-images {
+    max-width: 1087px;
+    margin: 0 auto;
+
+    .auss-images-div {
+        display: grid;
+        grid-template-columns: 437px 1fr;
+        gap: 20px;
+
+        .auss-images-div1 {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .auss-images-div2 {
+            img {
+                width: 100%;
+
+                &:last-child {
+                    margin-top: 19.57px;
+                }
+            }
+        }
+    }
+}
