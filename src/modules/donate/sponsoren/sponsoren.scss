@@ -1,0 +1,18 @@
+@import '../../../styles/';
+
+.sponsoren {
+    margin: 90px 0 79px 0;
+
+    h2 {
+        text-align: center;
+        @include font39b;
+        font-family: var(--font-family-inline);
+        margin-bottom: 60px;
+    }
+
+    .sponsoren-logo {
+        display: flex;
+        justify-content: center;
+        gap: 30px
+    }
+}

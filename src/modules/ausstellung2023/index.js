@@ -10,6 +10,10 @@ import TheBook from './theBook';
 import TheApparel from './theApparel';
 import Collabor from './collabor';
 import TheFuture from './theFuture';
+import Equal from './equal';
+import Lebanon from './lebanon';
+import ThankYou from './thankYou';
+import Contact from './contact';
 
 export default function Ausstellung2023() {
     return (
@@ -25,6 +29,10 @@ export default function Ausstellung2023() {
             <TheApparel />
             <Collabor />
             <TheFuture />
+            <Equal />
+            <Lebanon />
+            <ThankYou />
+            <Contact />
         </>
     )
 }

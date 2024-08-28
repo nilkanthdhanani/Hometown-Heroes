@@ -1,1 +1,13 @@
+.form-button {
+    @include flex-center;
 
+    button {
+        padding: 13px 26px;
+        border: 1px solid var(--bgcolor);
+        border-radius: 35px;
+        background-color: transparent;
+        @include font16ub;
+        color: var(--color-white);
+        font-family: var(--font-family-display);
+    }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/";
+
+.impressum {
+    max-width: 969px;
+    margin: 67px auto 230px auto;
+    padding: 0 20px;
+
+    h2 {
+        @include font76;
+    }
+
+    p {
+        @include font20b;
+        font-weight: 300;
+        letter-spacing: -0.06em;
+        margin: 30px 0;
+    }
+
+    .impressum-link {
+        display: flex;
+        justify-content: flex-end;
+        gap: 60px;
+
+        .impressum-link-div {
+            h3,
+            h4 {
+                @include font20ub;
+            }
+
+            h4 {
+                font-weight: 300;
+            }
+        }
+    }
+}

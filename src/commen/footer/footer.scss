@@ -29,3 +29,16 @@ footer {
         }
     }
 }
+
+.special-footer {
+    .footer-links {
+        a {
+            color: var(--bgcolor);
+        }
+    }
+    .footer-logo {
+        svg {
+            fill: var(--bgcolor);
+        }
+    }
+}

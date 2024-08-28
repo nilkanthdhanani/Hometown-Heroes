@@ -1,0 +1,26 @@
+@import "../../../styles/";
+
+.equal {
+    max-width: 1128px;
+    margin: 100px auto 87px auto;
+    display: flex;
+    gap: 30px;
+
+    img {
+        width: 446px;
+        max-height: 632px;
+    }
+
+    .equal-text {
+        max-width: 650px;
+
+        p {
+            margin-bottom: 30px;
+            @include aussPera;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

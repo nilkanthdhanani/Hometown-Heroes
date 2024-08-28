@@ -1,0 +1,25 @@
+@import "../../../styles/";
+
+.artist-name {
+    overflow: hidden;
+
+    span {
+        display: block;
+        margin-left: 158px;
+        @include font45b;
+    }
+
+    h2 {
+        @include artistHead;
+        font-family: var(--font-family-inline);
+        margin: 22px 0 16px -21px;
+        white-space: nowrap;
+    }
+
+    p {
+        @include font45b;
+        white-space: nowrap;
+        margin-left: 50%;
+        margin-bottom: 31px;
+    }
+}

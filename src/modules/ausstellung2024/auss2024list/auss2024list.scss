@@ -1,0 +1,15 @@
+@import "../../../styles/";
+
+.auss-list {
+    margin-bottom: 81px;
+    border-bottom: 1px solid var(--border-color);
+
+    a {
+        display: block;
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+        @include font36b;
+        color: var(--bgcolor);
+        padding: 10px 0;
+    }
+}

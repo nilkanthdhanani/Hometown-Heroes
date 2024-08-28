@@ -1,0 +1,26 @@
+@import "../../../styles/";
+
+.contact {
+    margin: 50px 0;
+
+    .contact-div {
+        h2 {
+            max-width: 969px;
+            margin: 0 auto;
+            text-align: center;
+            @include aussHeadLab;
+            margin-bottom: 50px;
+        }
+
+        p {
+            text-align: center;
+
+            margin-bottom: 30px;
+            @include aussPera;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

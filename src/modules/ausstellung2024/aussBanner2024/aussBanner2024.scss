@@ -1,0 +1,35 @@
+@import "../../../styles/";
+
+.auss-banner2 {
+    margin: 81px 0 60px 0;
+
+    .auss-banner2-div {
+        display: flex;
+        gap: 43px;
+
+        h2 {
+            width: 393px;
+            @include aussHeadm;
+            line-height: 178px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .auss-banner2-div-intro {
+            max-width: 393px;
+
+            h2 {
+                margin-bottom: 60px;
+            }
+            
+            p {
+                padding: 0 20px;
+                @include font14b;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

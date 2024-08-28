@@ -1,6 +1,18 @@
+@mixin font12b {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
 @mixin font14 {
     font-size: 14px;
     font-weight: 600;
+}
+
+@mixin font14b {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
 }
 
 @mixin font15b {
@@ -13,6 +25,19 @@
 @mixin font16 {
     font-size: 16px;
     font-weight: 400;
+}
+
+@mixin font16b {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+@mixin font16ub {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0.14em;
 }
 
 @mixin footerFont {
@@ -38,16 +63,55 @@
     line-height: 30px;
 }
 
+@mixin aussPera {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+@mixin font20ub {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 34.71px;
+    letter-spacing: -0.06em;
+}
+
+@mixin font22b {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
 @mixin font32 {
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
 }
 
+@mixin font36b {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+}
+
 @mixin font38b {
     font-size: 38.77px;
     font-weight: 900;
     line-height: 85.29px;
+    letter-spacing: -0.04em;
+}
+
+@mixin font39b {
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 22px;
+}
+
+@mixin font45b {
+    font-size: 45.46px;
+    font-weight: 900;
+    line-height: 59.66px;
     letter-spacing: -0.04em;
 }
 
@@ -62,6 +126,62 @@
     font-size: 54.1px;
     font-weight: 700;
     line-height: 56.27px;
+}
+
+@mixin font76 {
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 71px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHeadLab {
+    font-size: 98.05px;
+    font-weight: 900;
+    line-height: 85.3px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHeadCol {
+    font-size: 126.28px;
+    font-weight: 900;
+    line-height: 109.86px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHeadFut {
+    font-size: 138px;
+    font-weight: 900;
+    line-height: 120.06px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHeadJou {
+    font-size: 144.96px;
+    font-weight: 900;
+    line-height: 126.11px;
+    letter-spacing: -0.06em;
+}
+
+@mixin donHead {
+    font-size: 145.58px;
+    font-weight: 900;
+    line-height: 131px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHead {
+    font-size: 148.09px;
+    font-weight: 900;
+    line-height: 128.84px;
+    letter-spacing: -0.06em;
+}
+
+@mixin aussHeadGal {
+    font-size: 157.3px;
+    font-weight: 900;
+    line-height: 136.85px;
+    letter-spacing: -0.06em;
 }
 
 @mixin font160 {
@@ -84,36 +204,9 @@
     letter-spacing: -0.06em;
 }
 
-@mixin aussHead {
-    font-size: 148.09px;
+@mixin artistHead {
+    font-size: 207.4px;
     font-weight: 900;
-    line-height: 128.84px;
-    letter-spacing: -0.06em;
-}
-
-@mixin aussHeadCol {
-    font-size: 126.28px;
-    font-weight: 900;
-    line-height: 109.86px;
-    letter-spacing: -0.06em;
-}
-
-@mixin aussHeadFut {
-    font-size: 138px;
-    font-weight: 900;
-    line-height: 120.06px;
-    letter-spacing: -0.06em;
-}
-
-@mixin aussHeadGal {
-    font-size: 157.3px;
-    font-weight: 900;
-    line-height: 136.85px;
-    letter-spacing: -0.06em;
-}
-
-@mixin aussPera {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
+    line-height: 156.26px;
+    letter-spacing: -0.04em;
 }

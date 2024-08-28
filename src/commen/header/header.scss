@@ -20,7 +20,22 @@ header {
                 @include font20H;
                 color: var(--color-black);
                 font-family: var(--font-family-inline);
+
+                &.special-header & {
+                    color: var(--color-white);
+                }
             }
+        }
+    }
+}
+
+.special-header {
+    .header-div {
+        svg {
+            fill: var(--color-white);
+        }
+        .header-links a {
+            color: var(--bgcolor);
         }
     }
 }
