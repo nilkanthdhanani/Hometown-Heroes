@@ -16,12 +16,12 @@
         }
 
         img {
-            width: 354px;
+            min-width: 354px;
             max-height: 587px;
         }
 
         .the-book-div-text {
-            width: 484px;
+            max-width: 484px;
 
             p {
                 margin-bottom: 30px;

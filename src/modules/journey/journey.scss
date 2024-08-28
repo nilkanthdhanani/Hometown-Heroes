@@ -44,8 +44,9 @@
 
                 .journey-banner-img1 {
                     position: relative;
+
                     img {
-                        width: 324px;
+                        min-width: 324px;
                         max-height: 442px;
                     }
                 }
@@ -53,7 +54,7 @@
                     margin: 0 0 55px -93px;
 
                     img {
-                        width: 320px;
+                        max-width: 320px;
                     }
                 }
             }

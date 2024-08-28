@@ -4,9 +4,14 @@
     padding: 67px 0 69px 0;
 
     .hero-box {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         align-items: flex-end;
         gap: 110px;
+
+        @media (max-width: 1150px) {
+            gap: 63px;
+        }
 
         h1 {
             @include heroHead;
@@ -17,6 +22,7 @@
         }
 
         img {
+            width: 100%;
             max-width: 320px;
         }
     }

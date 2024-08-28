@@ -3,17 +3,30 @@
 header {
     padding: 40px 0;
 
+    @include breakpoint("lg-max") {
+        padding: 23px 0;
+    }
+
     .header-div {
         @include flex-between;
 
         svg {
             display: block;
             fill: var(--color-black);
+
+            @include breakpoint("lg-max") {
+                max-width: 187px;
+                height: auto;
+            }
         }
 
         .header-links {
             @include flex;
             gap: 38px;
+
+            @include breakpoint("lg-max") {
+                gap: 22px;
+            }
 
             a {
                 display: block;
@@ -21,8 +34,9 @@ header {
                 color: var(--color-black);
                 font-family: var(--font-family-inline);
 
-                &.special-header & {
-                    color: var(--color-white);
+                @include breakpoint("lg-max") {
+                    font-size: 11.58px;
+                    line-height: 11px;
                 }
             }
         }
@@ -34,8 +48,10 @@ header {
         svg {
             fill: var(--color-white);
         }
-        .header-links a {
-            color: var(--bgcolor);
+        .header-links {
+            a {
+                color: var(--bgcolor);
+            }
         }
     }
 }

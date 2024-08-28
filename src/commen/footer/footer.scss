@@ -6,6 +6,10 @@ footer {
     flex-direction: column;
     gap: 69px;
 
+    @include breakpoint("lg-max") {
+        gap: 20px;
+    }
+
     .footer-links {
         @include flex;
 
@@ -15,17 +19,24 @@ footer {
             text-align: center;
             @include footerFont;
             color: var(--font-color);
+
+            @include breakpoint("lg-max") {
+                min-width: 55px;
+                font-size: 9.53px;
+                line-height: 11px;
+            }
         }
     }
 
     .footer-logo {
-        @include flex;
-        flex-direction: column;
-        gap: 12.64px;
-        
         svg {
             display: block;
             fill: var(--font-color);
+
+            @include breakpoint("lg-max") {
+                max-width: 110px;
+                height: auto;
+            }
         }
     }
 }

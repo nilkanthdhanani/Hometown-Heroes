@@ -31,7 +31,7 @@
             z-index: 2;
             
             .auktionw-timer-text {
-                width: 93px;
+                min-width: 93px;
                 min-height: 152px;
                 @include flex-center;
                 background-color: var(--bgcolor);

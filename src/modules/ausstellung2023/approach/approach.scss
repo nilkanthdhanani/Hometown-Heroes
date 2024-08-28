@@ -23,7 +23,7 @@
                 }
 
                 img {
-                    width: 357px;
+                    min-width: 357px;
                     max-height: 511px;
                     object-fit: cover;
                 }
@@ -38,7 +38,7 @@
             margin-right: 17px;
 
             img {
-                width: 509px;
+                max-width: 509px;
             }
         }
     }

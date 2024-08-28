@@ -8,19 +8,20 @@
         gap: 43px;
 
         h2 {
-            width: 393px;
+            min-width: 393px;
             @include aussHeadm;
             line-height: 178px;
         }
 
         img {
-            width: 300px;
+            max-width: 300px;
         }
 
         .auss-banner2-div-intro {
             max-width: 393px;
 
             h2 {
+                line-height: 160px;
                 margin-bottom: 60px;
             }
             

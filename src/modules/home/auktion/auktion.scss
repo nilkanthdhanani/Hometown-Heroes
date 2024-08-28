@@ -29,7 +29,7 @@
             z-index: 2;
             
             .auktion-timer-text {
-                width: 93px;
+                min-width: 93px;
                 min-height: 152px;
                 @include flex-center;
                 background-color: var(--font-color);
