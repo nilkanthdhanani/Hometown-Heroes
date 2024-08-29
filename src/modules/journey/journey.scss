@@ -2,14 +2,16 @@
 
 .journey {
     .journey-banner {
-        margin: 38px 0 24px 0;
+        padding: 100px 0 24px 0;
+        position: relative;
+        @include flex-center;
 
         .journey-head {
-            position: relative;
+            position: absolute;
+            top: 38px;
             z-index: 2;
 
             h1 {
-                margin: 0 auto;
                 max-width: 617px;
                 @include aussHeadJou;
                 text-align: center;
@@ -17,7 +19,7 @@
         }
 
         .journey-banner-div {
-            margin-top: -190px;
+            width: 100%;
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
@@ -41,9 +43,11 @@
             .journey-banner-img {
                 display: flex;
                 align-items: flex-end;
-
+                position: relative;
+                
                 .journey-banner-img1 {
-                    position: relative;
+                    position: absolute;
+                    right: 227px;
 
                     img {
                         min-width: 324px;
@@ -51,7 +55,7 @@
                     }
                 }
                 .journey-banner-img2 {
-                    margin: 0 0 55px -93px;
+                    padding-bottom: 55px;
 
                     img {
                         max-width: 320px;

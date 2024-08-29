@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../modules/home";
 import DefaultLayout from "./defaultLayout";
-import Error from "../error";
 import Ausstellung2023 from "../modules/ausstellung2023";
 import Impressum from "../modules/Impressum";
 import Datenschutz from "../modules/datenschutz";
@@ -48,13 +47,7 @@ const router = createBrowserRouter([
                 element: <Lwandle />
             }
         ]
-    },
-
-    {
-        path: "*",
-        element: <Error />
     }
-]
-)
+])
 
 export default router;

@@ -8,17 +8,14 @@
     }
 
     .hero-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         align-items: flex-end;
-        gap: 110px;
-
-        @media (max-width: 1150px) {
-            gap: 63px;
-        }
+        justify-content: space-between;
+        gap: 60px;
 
         h1 {
             @include heroHead;
+            max-width: 426px;
 
             @media (max-width: 1024px) {
                 font-size: 100px;
@@ -28,6 +25,7 @@
 
         p {
             @include heroPera;
+            max-width: 304px;
 
             @media (max-width: 1024px) {
                 font-size: 30px;

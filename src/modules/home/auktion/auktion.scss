@@ -16,7 +16,7 @@
 
     .auktion-timer {
         @include flex-center;
-        gap: 15.5px;
+        gap: 15px;
         position: relative;
 
         @media (max-width: 1024px) {
@@ -32,7 +32,7 @@
             border: 1.5px solid var(--font-color);
 
             @media (max-width: 1024px) {
-                width: 350px;
+                max-width: 350px;
             }
         }
 
@@ -45,8 +45,8 @@
                 min-height: 152px;
                 @include flex-center;
                 background-color: var(--font-color);
-                border-radius: 10.7px;
-                margin-bottom: 17.02px;
+                border-radius: 10px;
+                margin-bottom: 17px;
 
                 @media (max-width: 1024px) {
                     min-width: 53px;

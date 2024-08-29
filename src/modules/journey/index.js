@@ -7,8 +7,8 @@ export default function Journey() {
     return (
         <>
             <div className="journey">
-                <div className="journey-banner">
-                    <div className="containerH">
+                <div className="containerH">
+                    <div className="journey-banner">
                         <div className="journey-head">
                             <h1>FOLLOW THE JOURNEY</h1>
                         </div>

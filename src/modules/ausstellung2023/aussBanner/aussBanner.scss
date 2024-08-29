@@ -1,10 +1,11 @@
 @import "../../../styles/";
 
 .auss-banner {
-    margin: 38px 0 121px 0;
+    padding: 38px 0 121px 0;
 
     .auss-banner-div {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         align-items: flex-end;
         gap: 35px;
 
@@ -15,6 +16,7 @@
 
         .auss-banner-div-intro {
             max-width: 409px;
+            
             h1 {
                 line-height: 71px;
                 margin-bottom: 78px;
@@ -26,6 +28,7 @@
         }
 
         img {
+            width: 100%;
             max-width: 387px;
         }
     }
