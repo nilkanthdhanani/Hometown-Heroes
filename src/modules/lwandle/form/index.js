@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './form.scss';
 import { lwandle } from '../../../assets/images/image';
 
 export default function Form() {
+    const [isChecked, setIsChecked] = useState(false);
+    const handleCheckboxChange = () => {
+        setIsChecked(!isChecked);
+    };
+
     return (
         <>
             <div className="form">
@@ -44,9 +49,16 @@ export default function Form() {
                                     </div>
                                     <div className="form-input-first"></div>
                                 </div>
-                                <ul>
-                                    <li>Es gelten die AGB. Ich habe die Datenschutzerklärung zur Kenntnis genommen.</li>
-                                </ul>
+                                <div className="form-input-check">
+                                    <input
+                                        type="checkbox"
+                                        id="agb"
+                                        name="agb"
+                                        value="agb"
+                                        checked={isChecked}
+                                        onChange={handleCheckboxChange}/>
+                                    <span>Es gelten die AGB. Ich habe die Datenschutzerklärung zur Kenntnis genommen.</span>
+                                </div>
                             </div>
                             <div className="form-button">
                                 <button>Gebot abgeben</button>

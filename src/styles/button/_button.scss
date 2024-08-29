@@ -9,5 +9,13 @@
         @include font16ub;
         color: var(--color-white);
         font-family: var(--font-family-display);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-white);
+            color: var(--font-color);
+            transition: 0.3s ease-in-out;
+        }
     }
 }
