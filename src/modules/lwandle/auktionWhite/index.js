@@ -5,7 +5,7 @@ export default function AuktionWhite() {
     return (
         <>
             <div className="auktionw">
-                <div className="container2">
+                <div className="container">
                     <div className="auktionw-div">
                         <h2>AUKTION 2024 NOCH</h2>
                     </div>

@@ -14,12 +14,16 @@
         font-family: var(--font-family-inline);
         margin: 22px 0 16px -21px;
         white-space: nowrap;
+        position: relative;
+        animation: marquee-right 10s linear infinite;
     }
 
     p {
         @include font45b;
         white-space: nowrap;
-        margin-left: 50%;
+        position: relative;
+        animation: marquee-left 10s linear infinite;
+        // margin-left: 50%;
         margin-bottom: 31px;
     }
 }

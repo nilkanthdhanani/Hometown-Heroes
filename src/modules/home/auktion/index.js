@@ -5,7 +5,7 @@ export default function Auktion() {
     return (
         <>
             <div className="auktion">
-                <div className="container2">
+                <div className="container">
                     <div className="auktion-div">
                         <h2>AUKTION 2024 NOCH</h2>
                     </div>

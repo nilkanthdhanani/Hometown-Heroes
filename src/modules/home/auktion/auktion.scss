@@ -6,6 +6,11 @@
             @include font38b;
             text-align: center;
             font-family: var(--font-family-inline);
+
+            @include breakpoint("lg-max") {
+                font-size: 25px;
+                line-height: 50px;
+            }
         }
     }
 
@@ -14,20 +19,27 @@
         gap: 15.5px;
         position: relative;
 
+        @include breakpoint("lg-max") {
+            gap: 9px;
+        }
+
         &::after {
             content: "";
             position: absolute;
             top: 37%;
-            left: 0;
-            width: 100%;
+            width: 610px;
             height: 1.55px;
             background-color: var(--font-color);
+
+            @include breakpoint("lg-max") {
+                width: 350px;
+            }
         }
 
         .auktion-timer-div {
             position: relative;
             z-index: 2;
-            
+
             .auktion-timer-text {
                 min-width: 93px;
                 min-height: 152px;
@@ -36,9 +48,20 @@
                 border-radius: 10.7px;
                 margin-bottom: 17.02px;
 
+                @include breakpoint("lg-max") {
+                    min-width: 53px;
+                    min-height: 87px;
+                    margin-bottom: 10px;
+                }
+
                 h3 {
                     @include font47b;
                     color: var(--bgcolor);
+
+                    @include breakpoint("lg-max") {
+                        font-size: 27px;
+                        line-height: 26px;
+                    }
                 }
             }
 
@@ -46,6 +69,11 @@
                 display: block;
                 @include font15b;
                 text-align: center;
+
+                @include breakpoint("lg-max") {
+                    font-size: 9px;
+                    line-height: 20px;
+                }
             }
         }
     }

@@ -3,6 +3,10 @@
 .hero-banner {
     padding: 67px 0 69px 0;
 
+    @include breakpoint("lg-max") {
+        padding: 69px 0 60px 0;
+    }
+
     .hero-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -15,10 +19,20 @@
 
         h1 {
             @include heroHead;
+
+            @include breakpoint("lg-max") {
+                font-size: 100px;
+                line-height: 83px;
+            }
         }
 
         p {
             @include heroPera;
+
+            @include breakpoint("lg-max") {
+                font-size: 30px;
+                line-height: 32px;
+            }
         }
 
         img {
