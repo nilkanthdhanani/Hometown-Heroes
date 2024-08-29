@@ -6,21 +6,23 @@ import Footer from '../commen/footer';
 export default function DefaultLayout() {
   const location = useLocation();
 
-  useEffect(() => {
-    const isSpecialPage = location.pathname === '/donate' || location.pathname === '/auss2024'  || location.pathname === '/lwandle';
+  const specialPages = ['/donate', '/auss2024', '/lwandle'];
 
-    if (isSpecialPage) {
-      document.body.classList.add('special-bg');
-    } else {
-      document.body.classList.remove('special-bg');
-    }
-
-    return () => {
-      document.body.classList.remove('special-bg');
-    };
-  }, [location.pathname]);
+  const isSpecialPage = specialPages.includes(location.pathname);
+  const backgroundColor = isSpecialPage ? '#1a1a1a' : '#f6f1e5';
+  const color = isSpecialPage ? '#f6f1e5' : '#1b1b1b';
 
   const shouldShowFooter = location.pathname !== '/auss2024';
+
+  useEffect(() => {
+    document.body.style.backgroundColor = backgroundColor;
+    document.body.style.color = color;
+
+    return () => {
+      document.body.style.backgroundColor = '';
+      document.body.style.color = '';
+    };
+  }, [backgroundColor, color]);
 
   return (
     <>
