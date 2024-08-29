@@ -3,7 +3,7 @@
 header {
     padding: 40px 0;
 
-    @include breakpoint("lg-max") {
+    @media (max-width: 1024px) {
         padding: 23px 0;
     }
 
@@ -14,7 +14,7 @@ header {
             display: block;
             fill: var(--color-black);
 
-            @include breakpoint("lg-max") {
+            @media (max-width: 1024px) {
                 max-width: 187px;
                 height: auto;
             }
@@ -24,7 +24,7 @@ header {
             @include flex;
             gap: 38px;
 
-            @include breakpoint("lg-max") {
+            @media (max-width: 1024px) {
                 gap: 22px;
             }
 
@@ -34,7 +34,7 @@ header {
                 color: var(--color-black);
                 font-family: var(--font-family-inline);
 
-                @include breakpoint("lg-max") {
+                @media (max-width: 1024px) {
                     font-size: 11.58px;
                     line-height: 11px;
                 }

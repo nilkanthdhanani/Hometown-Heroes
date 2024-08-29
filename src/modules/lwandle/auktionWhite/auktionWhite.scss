@@ -20,9 +20,9 @@
             content: "";
             position: absolute;
             top: 37%;
-            width: 610px;
-            height: 1.55px;
-            background-color: var(--bgcolor);
+            width: 100%;
+            max-width: 610px;
+            border: 1.5px solid var(--bgcolor);
         }
 
         .auktionw-timer-div {

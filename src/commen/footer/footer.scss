@@ -6,7 +6,7 @@ footer {
     flex-direction: column;
     gap: 69px;
 
-    @include breakpoint("lg-max") {
+    @media (max-width: 1024px) {
         gap: 20px;
     }
 
@@ -20,7 +20,7 @@ footer {
             @include footerFont;
             color: var(--font-color);
 
-            @include breakpoint("lg-max") {
+            @media (max-width: 1024px) {
                 min-width: 55px;
                 font-size: 9.53px;
                 line-height: 11px;
@@ -33,7 +33,7 @@ footer {
             display: block;
             fill: var(--font-color);
 
-            @include breakpoint("lg-max") {
+            @media (max-width: 1024px) {
                 max-width: 110px;
                 height: auto;
             }
