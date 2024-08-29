@@ -19,39 +19,41 @@ export default function Datenschutz() {
                         <h3>Gliederung: Informationen über  uns als Verantwortliche Rechte der Nutzer und Betroffenen Informationen zur Datenverarbeitung</h3>
                     </div>
                     <div className="datenschutz-div-text">
-                        <p>1. Informationen über uns als Verantwortliche Verantwortlicher Anbieter im Sinne des Datenschutzrechts: <br />
-                            Tom von Below <br /> Frickestraße 83 20251 Hamburg <br /> E-Mail: info@hometown-heroes.de
-                        </p>
+                        <p>1. Informationen über uns als Verantwortliche Verantwortlicher Anbieter im Sinne des Datenschutzrechts:</p>
+                        <p>Tom von Below <br /> Frickestraße 83 20251 Hamburg <br /> E-Mail: info@hometown-heroes.de</p>
                     </div>
                     <div className="datenschutz-div-text">
-                        <p>
-                            2. Rechte der Nutzer und Betroffenen <br />
-                            Nutzer und Betroffene haben folgende Rechte hinsichtlich der Datenverarbeitung: <br />
-                            Auskunft: Bestätigung, ob Daten verarbeitet werden, sowie Informationen über die Verarbeitung und Kopien der Daten (Art. 15 DSGVO). <br />
-                            Berichtigung: Korrektur unrichtiger oder unvollständiger Daten (Art. 16 DSGVO). <br />
-                            Löschung: Löschung der Daten (Art. 17 DSGVO) oder Einschränkung der Verarbeitung, wenn eine Löschung nicht möglich ist (Art. 18 DSGVO). <br />
-                            Datenübertragbarkeit: Erhalt und Übermittlung der bereitgestellten Daten an andere Anbieter/Verantwortliche (Art. 20 DSGVO). <br />
-                            Beschwerde: Einreichung einer Beschwerde bei der zuständigen Aufsichtsbehörde (Art. 77 DSGVO). <br />
-                            Widerspruch: Recht auf Widerspruch gegen die Datenverarbeitung, insbesondere bei Direktwerbung (Art. 21 DSGVO). <br />
-                            Wir sind verpflichtet, Empfänger von Daten über Berichtigungen, Löschungen oder Einschränkungen der Verarbeitung zu informieren, es sei denn, dies ist unmöglich oder erfordert unverhältnismäßigen Aufwand. Nutzer haben zudem ein Recht auf Auskunft über diese Empfänger.
-                        </p>
-                        <p>
-                            3. Informationen zur Datenverarbeitung <br />
-                            Die von uns verarbeiteten Daten werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt und keine gesetzlichen Aufbewahrungspflichten bestehen. <br />
-                            Serverdaten <br />
-                            Zur Gewährleistung eines sicheren und stabilen Internetauftritts werden technische Daten (z.B. Browsertyp, Betriebssystem, Referrer-URL, IP-Adresse) durch Ihren Internet-Browser an uns bzw. an unseren Webspace-Provider übermittelt und vorübergehend gespeichert. Diese Daten werden nach spätestens sieben Tagen gelöscht, sofern keine Aufbewahrung zu Beweiszwecken erforderlich ist. <br />
-                            Rechtsgrundlage: Art. 6 Abs. 1 lit. f) DSGVO. <br />
-                            Cookies
-                        </p>
+                        <p>2. Rechte der Nutzer und Betroffenen</p>
+                        <p>Nutzer und Betroffene haben folgende Rechte hinsichtlich der Datenverarbeitung:</p>
+                        <p>Auskunft: Bestätigung, ob Daten verarbeitet werden, sowie Informationen über die Verarbeitung und Kopien der Daten (Art. 15 DSGVO).</p>
+                        <p>Berichtigung: Korrektur unrichtiger oder unvollständiger Daten (Art. 16 DSGVO).</p>
+                        <p>Löschung: Löschung der Daten (Art. 17 DSGVO) oder Einschränkung der Verarbeitung, wenn eine Löschung nicht möglich ist (Art. 18 DSGVO).</p>
+                        <p>Datenübertragbarkeit: Erhalt und Übermittlung der bereitgestellten Daten an andere Anbieter/Verantwortliche (Art. 20 DSGVO).</p>
+                        <p>Beschwerde: Einreichung einer Beschwerde bei der zuständigen Aufsichtsbehörde (Art. 77 DSGVO).</p>
+                        <p>Widerspruch: Recht auf Widerspruch gegen die Datenverarbeitung, insbesondere bei Direktwerbung (Art. 21 DSGVO).</p>
+                        <p>Wir sind verpflichtet, Empfänger von Daten über Berichtigungen, Löschungen oder Einschränkungen der Verarbeitung zu informieren, es sei denn, dies ist unmöglich oder erfordert unverhältnismäßigen Aufwand. Nutzer haben zudem ein Recht auf Auskunft über diese Empfänger.</p>
+
+                        <p>3. Informationen zur Datenverarbeitung</p>
+                        <p>Die von uns verarbeiteten Daten werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+                        <p>Serverdaten</p>
+                        <p>Zur Gewährleistung eines sicheren und stabilen Internetauftritts werden technische Daten (z.B. Browsertyp, Betriebssystem, Referrer-URL, IP-Adresse) durch Ihren Internet-Browser an uns bzw. an unseren Webspace-Provider übermittelt und vorübergehend gespeichert. Diese Daten werden nach spätestens sieben Tagen gelöscht, sofern keine Aufbewahrung zu Beweiszwecken erforderlich ist.</p>
+                        <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f) DSGVO.</p>
+                        <p>Cookies</p>
+
                         <p>a) Session-Cookies <br />
                             Wir verwenden Cookies, um die Benutzerfreundlichkeit, Effektivität und Sicherheit unseres Internetauftritts zu erhöhen. Diese Cookies werden nach dem Schließen des Browsers gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. b) DSGVO bzw. Art. 6 Abs. 1 lit. f) DSGVO bei berechtigtem Interesse.</p>
                         <p>b) Drittanbieter-Cookies <br />
                             Auf unserer Website kommen möglicherweise Cookies von Partnerunternehmen zum Einsatz. Details zu diesen Cookies finden Sie in den nachfolgenden Informationen.</p>
                         <p>c) Cookie-Einstellungen <br />
                             Sie können die Installation von Cookies durch Ihren Browser verhindern oder einschränken und bereits gespeicherte Cookies löschen. Beachten Sie, dass dies die Funktionalität unseres Internetauftritts einschränken kann.</p>
-                        <p>Kontaktaufnahme <br />
-                            Bei Kontaktaufnahme per Formular oder E-Mail werden die angegebenen Daten zur Bearbeitung Ihrer Anfrage verwendet. Ohne diese Angaben können wir Ihre Anfrage möglicherweise nicht beantworten. <br />Rechtsgrundlage: Art. 6 Abs. 1 lit. b) DSGVO. <br />Instagram <br />Wir betreiben eine Firmenpräsenz auf Instagram, gemeinsam verantwortlich mit der Facebook Ireland Ltd. Bei Nutzung unseres Instagram-Profils werden Ihre Daten von Facebook Ireland Ltd. zu Marktforschungs- und Werbezwecken verarbeitet. <br />Rechtsgrundlage: Art. 6 Abs. 1 lit. f) DSGVO oder bei Einwilligung des Nutzers Art. 6 Abs. 1 lit. a) DSGVO. <br />Detaillierte Informationen finden Sie in den Datenschutzrichtlinien von Instagram: Instagram Datenschutzrichtlinie
-                        </p>
+                            
+                        <p>Kontaktaufnahme</p>
+                        <p>Bei Kontaktaufnahme per Formular oder E-Mail werden die angegebenen Daten zur Bearbeitung Ihrer Anfrage verwendet. Ohne diese Angaben können wir Ihre Anfrage möglicherweise nicht beantworten.</p>
+                        <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b) DSGVO.</p>
+                        <p>Instagram</p>
+                        <p>Wir betreiben eine Firmenpräsenz auf Instagram, gemeinsam verantwortlich mit der Facebook Ireland Ltd. Bei Nutzung unseres Instagram-Profils werden Ihre Daten von Facebook Ireland Ltd. zu Marktforschungs- und Werbezwecken verarbeitet.</p>
+                        <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f) DSGVO oder bei Einwilligung des Nutzers Art. 6 Abs. 1 lit. a) DSGVO.</p>
+                        <p>Detaillierte Informationen finden Sie in den Datenschutzrichtlinien von Instagram: Instagram Datenschutzrichtlinie</p>
                     </div>
                 </div>
             </div>
