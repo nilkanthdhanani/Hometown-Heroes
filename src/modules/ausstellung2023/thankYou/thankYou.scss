@@ -15,7 +15,9 @@
             }
 
             img {
-                max-width: 393px;
+                min-width: 393px;
+                max-height: 145px;
+                object-fit: cover;
             }
         }
 
