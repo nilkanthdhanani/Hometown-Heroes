@@ -1,19 +1,28 @@
 @import "../../../styles/";
 
-.the-gallary {
-    h2 {
-        @include aussHeadGal;
-        text-align: center;
+.gallary {
+    .gallary-div {
+        padding-top: 45px;
         position: relative;
-    }
 
-    .gallary-image {
-        margin-top: -92px;
-
-        img {
+        .the-gallary-head {
+            position: absolute;
+            top: 0;
             width: 100%;
-            max-height: 563px;
-            object-fit: cover;
+
+            h2 {
+                @include aussHeadGal;
+                text-align: center;
+                position: relative;
+            }
+        }
+
+        .gallary-image {
+            img {
+                width: 100%;
+                max-height: 563px;
+                object-fit: cover;
+            }
         }
     }
 }
