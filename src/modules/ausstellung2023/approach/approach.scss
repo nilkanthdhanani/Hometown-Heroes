@@ -5,7 +5,6 @@
 
     .approach-div {
         display: flex;
-        align-items: center;
         justify-content: flex-end;
         gap: 53px;
 
@@ -19,12 +18,13 @@
 
                 h2 {
                     @include aussHead;
-                    min-width: 219px;
+                    min-width: 220px;
+                    word-break: break-word;
                 }
 
                 img {
                     width: 100%;
-                    min-width: 357px;
+                    max-width: 357px;
                     max-height: 511px;
                     object-fit: cover;
                 }
@@ -36,12 +36,12 @@
         }
 
         .approach-div2 {
-            margin-right: 17px;
+            padding: 220px 17px 0 0;
 
             img {
                 width: 100%;
-                max-width: 509px;
-                min-height: 284px;
+                min-width: 509px;
+                max-height: 284px;
                 object-fit: cover;
             }
         }
