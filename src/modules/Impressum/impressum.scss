@@ -1,9 +1,7 @@
 @import "../../styles/";
 
 .impressum {
-    max-width: 969px;
-    margin: 67px auto 230px auto;
-    padding: 0 20px;
+    margin: 67px 0 230px 0;
 
     h2 {
         @include font76;
@@ -17,6 +15,7 @@
     }
 
     .impressum-link {
+        margin-right: 5px;
         display: flex;
         justify-content: flex-end;
         gap: 60px;

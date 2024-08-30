@@ -1,16 +1,14 @@
 @import "../../styles/";
 
 .datenschutz {
-    max-width: 969px;
-    margin: 67px auto 69px auto;
-    padding: 0 20px;
-
-    h2 {
-        @include font76;
-        margin-bottom: 30px;
-    }
+    margin: 67px 0 69px 0;
 
     .datenschutz-div {
+        h2 {
+            @include font76;
+            margin-bottom: 30px;
+        }
+
         .datenschutz-div-text {
             padding-bottom: 30px;
 

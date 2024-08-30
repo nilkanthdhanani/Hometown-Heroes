@@ -8,7 +8,9 @@ export default function TheGallary() {
             <div className="the-gallary">
                 <div className="container3">
                     <h2>THE GALLERY</h2>
-                    <img src={theGallary} alt="theGallary" />
+                    <div className="gallary-image">
+                        <img src={theGallary} alt="theGallary" />
+                    </div>
                 </div>
             </div>
         </>

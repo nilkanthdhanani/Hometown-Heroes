@@ -1,55 +1,55 @@
 @import "../../../styles/";
 
-.collabor {
-    max-width: 1054px;
-    margin: 100px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 432px 432px;
-    justify-content: space-between;
-    gap: 50px;
+.collabar-main {
+    margin: 100px 0;
+    
+    .collabor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 150px;
 
-    .collabor-div {
-        h2 {
-            @include aussHeadCol;
-            text-align: center;
-        }
-
-        .collabor-div-img {
-            margin: 30px 0;
-
-            img {
-                width: 100%;
-                max-height: 105px;
+        .collabor-div {
+            h2 {
+                @include aussHeadCol;
+                text-align: center;
             }
 
-            span {
-                display: block;
-                text-align: center;
-                margin-top: 5px;
-                @include font14;
-                font-weight: 700;
-                line-height: 20px;
+            .collabor-div-img {
+                margin: 30px 0;
+
+                img {
+                    width: 100%;
+                    max-height: 105px;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    margin-top: 5px;
+                    @include font14;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+
+                p {
+                    margin: 5px 0 0 0;
+                }
+            }
+
+            .second {
+                img {
+                    max-height: 126px;
+                }
             }
 
             p {
-                margin: 5px 0 0 0;
-            }
-        }
+                margin-bottom: 30px;
+                @include aussPera;
+                text-align: center;
 
-        .second {
-            img {
-                max-height: 126px;
-            }
-        }
-
-        p {
-            margin-bottom: 30px;
-            @include aussPera;
-            text-align: center;
-
-            &:last-child {
-                margin-bottom: 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }

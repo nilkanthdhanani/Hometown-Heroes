@@ -1,26 +1,27 @@
 @import "../../../styles/";
 
-.equal {
-    max-width: 1168px;
-    margin: 100px auto 87px auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 30px;
+.equal-main {
+    margin: 100px 0 87px 15px;
 
-    img {
-        min-width: 446px;
-        max-height: 632px;
-    }
+    .equal {
+        display: flex;
+        gap: 30px;
 
-    .equal-text {
-        max-width: 650px;
+        img {
+            min-width: 446px;
+            max-height: 632px;
+        }
 
-        p {
-            margin-bottom: 30px;
-            @include aussPera;
+        .equal-text {
+            max-width: 650px;
 
-            &:last-child {
-                margin-bottom: 0;
+            p {
+                margin-bottom: 30px;
+                @include aussPera;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }

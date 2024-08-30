@@ -2,7 +2,7 @@
 
 .journey {
     .journey-banner {
-        padding: 100px 0 24px 0;
+        padding: 100px 0 25px 0;
         position: relative;
         @include flex-center;
 
@@ -15,7 +15,7 @@
                 max-width: 617px;
                 @include aussHeadJou;
                 text-align: center;
-                margin-left: 22px;
+                margin-left: 20px;
             }
         }
 
@@ -27,7 +27,7 @@
             gap: 35px;
 
             .journey-banner-div-intro {
-                max-width: 409px;
+                max-width: 410px;
                 padding: 135px 0 36px 0;
 
                 h2 {
@@ -42,29 +42,15 @@
             }
 
             .journey-banner-img {
-                display: flex;
-                align-items: flex-end;
-                position: relative;
-                
-                .journey-banner-img1 {
-                    position: absolute;
-                    right: 227px;
-
-                    img {
-                        min-width: 324px;
-                        max-height: 442px;
-                    }
-                }
-                .journey-banner-img2 {
-                    padding-bottom: 56px;
-
-                    img {
-                        max-width: 321px;
-                    }
+                img {
+                    width: 100%;
+                    max-width: 550px;
+                    min-height: 484px;
                 }
             }
         }
     }
+    
     .auss-banner {
         display: none;
     }

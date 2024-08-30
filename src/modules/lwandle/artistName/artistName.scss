@@ -12,14 +12,14 @@
     h2 {
         @include artistHead;
         font-family: var(--font-family-inline);
-        margin: 22px 0 16px -21px;
+        margin: 22px 0 16px 0;
         white-space: nowrap;
     }
 
     p {
         @include font45b;
         white-space: nowrap;
-        margin-left: 50%;
+        text-align: right;
         margin-bottom: 31px;
     }
 }

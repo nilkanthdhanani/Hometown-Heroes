@@ -1,54 +1,52 @@
 @import "../../../styles/";
 
-.the-book {
+.book {
     margin: 100px 0;
-    padding: 0 20px;
 
-    .the-book-div {
-        max-width: 1164px;
-        margin: 0 auto;
-        display: flex;
-        gap: 30px;
+    .the-book {
+        .the-book-div {
+            display: flex;
+            gap: 30px;
 
-        h2 {
-            max-width: 266px;
-            text-align: right;
-            margin: 0;
-        }
+            h3 {
+                @include aussHead;
+                text-align: right;
+            }
 
-        img {
-            min-width: 354px;
-            max-height: 587px;
-        }
+            img {
+                min-width: 354px;
+                max-height: 587px;
+            }
 
-        .the-book-div-text {
-            max-width: 484px;
+            .the-book-div-text {
+                max-width: 484px;
 
-            p {
-                margin-bottom: 30px;
-                @include aussPera;
+                p {
+                    margin-bottom: 30px;
+                    @include aussPera;
 
-                &:last-child {
-                    margin-bottom: 0;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
-    }
 
-    h2 {
-        @include aussHead;
-        text-align: center;
-        margin: 100px 0 60px 0;
-    }
+        h2 {
+            @include aussHead;
+            text-align: center;
+            line-height: 110px;
+            margin: 100px 0 60px 0;
+        }
 
-    .the-image-book {
-        max-width: 1003px;
-        margin: 0 auto;
-        @include grid3c;
-        gap: 50px;
+        .the-image-book {
+            margin: 0 80px;
+            @include grid3c;
+            gap: 50px;
 
-        img {
-            width: 100%;
+            img {
+                width: 100%;
+            }
         }
     }
 }

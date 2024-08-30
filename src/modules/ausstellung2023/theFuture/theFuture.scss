@@ -1,25 +1,24 @@
-@import '../../../styles/';
+@import "../../../styles/";
 
-.the-future {
-    max-width: 1147px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
+.future {
+    .the-future {
+        text-align: center;
 
-    h2 {
-        @include aussHeadFut;
+        h2 {
+            @include aussHeadFut;
 
-        &:last-child {
-            line-height: 107px;
+            &:last-child {
+                line-height: 107px;
+            }
         }
-    }
 
-    img {
-        width: 100%;
-    }
+        img {
+            width: 100%;
+        }
 
-    h3 {
-        margin: 5px 0;
-        @include aussPera;
+        h3 {
+            margin: 5px 0;
+            @include aussPera;
+        }
     }
 }
