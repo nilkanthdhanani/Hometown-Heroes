@@ -1,11 +1,13 @@
 @import "../../../styles/";
 
 .collabor {
-    max-width: 1014px;
+    max-width: 1054px;
     margin: 100px auto;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 150px;
+    grid-template-columns: 432px 432px;
+    justify-content: space-between;
+    gap: 50px;
 
     .collabor-div {
         h2 {

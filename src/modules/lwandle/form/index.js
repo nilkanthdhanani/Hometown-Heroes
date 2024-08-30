@@ -45,7 +45,7 @@ export default function Form() {
                                 <div className="form-input-box flex">
                                     <div className="form-input-first">
                                         <label>Gebot in € *</label>
-                                        <input type="text" placeholder="300€" />
+                                        <input type="number" placeholder="300€" />
                                     </div>
                                     <div className="form-input-first"></div>
                                 </div>
