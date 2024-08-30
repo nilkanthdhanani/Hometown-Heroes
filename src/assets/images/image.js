@@ -1,7 +1,7 @@
 
-import heroBanner from '../images/jpg/heroBanner.jpeg'
-import aussBanner from '../images/jpg/aussBanner.jpeg'
-import lwandle from '../images/jpg/lwandle.jpeg'
+import heroBanner from '../images/jpg/heroBanner.jpg'
+import aussBanner from '../images/jpg/aussBanner.jpg'
+import lwandle from '../images/jpg/lwandle.jpg'
 
 import theIdea from '../images/png/theIdea.png'
 import approach1 from '../images/png/approach1.png'
@@ -35,6 +35,3 @@ export {
 
     canon, jesam, omr, 
 }
-
-// sir aa issue solve nathi thato.
-// HTML nu page by default white hoy etle jyare page reload thay thayre page render thata body ma background color avta millisecond na gap ne lidhe flash thay chhe.

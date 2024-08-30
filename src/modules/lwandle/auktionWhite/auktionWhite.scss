@@ -1,6 +1,8 @@
 @import "../../../styles/";
 
 .auktionw {
+    margin-bottom: 45px;
+
     .auktionw-div {
         h2 {
             @include font38b;
@@ -39,16 +41,10 @@
         .auktionw-timer-text {
             position: relative;
             z-index: 2;
-            min-width: 93px;
-            min-height: 152px;
+            padding: 76px 46px;
             @include flex-center;
             background-color: var(--bgcolor);
             border-radius: 10px;
-
-            @media (max-width: 1024px) {
-                min-width: 53px;
-                min-height: 87px;
-            }
 
             h3 {
                 @include font47b;

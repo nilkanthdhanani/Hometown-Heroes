@@ -23,6 +23,7 @@
             h2 {
                 @include donHead;
                 min-width: 368px;
+                word-break: break-word;
             }
         }
 
@@ -30,6 +31,7 @@
             h3 {
                 @include font36b;
                 margin-bottom: 10px;
+                word-break: break-word;
             }
 
             p {

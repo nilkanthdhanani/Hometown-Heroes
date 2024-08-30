@@ -1,16 +1,16 @@
+@import '../../styles/';
+
 .advanced-loader-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    @include flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    background-color: var(--color-black);
     z-index: 1000;
-    color: #f6f1e5;
+    color: var(--bgcolor);
   }
   
   .circle {
@@ -18,10 +18,10 @@
     height: 80px;
     border-radius: 50%;
     border: 8px solid transparent;
-    border-top: 8px solid #3498db; /* Blue */
-    border-right: 8px solid #e74c3c; /* Red */
-    border-bottom: 8px solid #f39c12; /* Yellow */
-    border-left: 8px solid #9b59b6; /* Purple */
+    border-top: 8px solid var(--reload-color1);
+    border-right: 8px solid var(--reload-color2);
+    border-bottom: 8px solid var(--reload-color3);
+    border-left: 8px solid var(--reload-color4);
     animation: rotateCircle 1.5s linear infinite;
   }
   
@@ -30,20 +30,5 @@
     font-size: 18px;
     letter-spacing: 2px;
     animation: blinkText 1.5s ease-in-out infinite;
-  }
-  
-  @keyframes rotateCircle {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-  }
-  
-  @keyframes blinkText {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
   }
   

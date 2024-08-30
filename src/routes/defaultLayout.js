@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../commen/header';
 import Footer from '../commen/footer';
-import Loader from '../commen/loader';
 
 export default function DefaultLayout() {
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
 
   const specialPages = ['/donate', '/auss2024', '/lwandle'];
 
@@ -15,13 +13,6 @@ export default function DefaultLayout() {
   const color = isSpecialPage ? '#f6f1e5' : '#1b1b1b';
 
   const shouldShowFooter = location.pathname !== '/auss2024';
-
-  useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1000); // Simulate loading time
-
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
 
   useEffect(() => {
     document.body.style.backgroundColor = backgroundColor;
@@ -35,10 +26,9 @@ export default function DefaultLayout() {
 
   return (
     <>
-      {loading && <Loader />}
       <Header />
-      {!loading && <Outlet />}
-      {!loading && shouldShowFooter && <Footer />}
+      <Outlet />
+      {shouldShowFooter && <Footer />}
     </>
   );
 }
