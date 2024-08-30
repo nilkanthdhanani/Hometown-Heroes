@@ -35,3 +35,6 @@ export {
 
     canon, jesam, omr, 
 }
+
+// sir aa issue solve nathi thato.
+// HTML nu page by default white hoy etle jyare page reload thay thayre page render thata body ma background color avta millisecond na gap ne lidhe flash thay chhe.
