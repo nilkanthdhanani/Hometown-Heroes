@@ -1,6 +1,8 @@
 import React from 'react';
 import './sponsoren.scss';
-import { canon, jesam, omr } from '../../../assets/images/image';
+import CanonSvg from '../../../assets/images/svg/canonSvg';
+import Omrsvg from '../../../assets/images/svg/omrsvg';
+import JesamSvg from '../../../assets/images/svg/jesamSvg';
 
 export default function Sponsoren() {
     return (
@@ -8,9 +10,9 @@ export default function Sponsoren() {
             <div className="sponsoren">
                 <h2>SPONSOREN & PARTNER</h2>
                 <div className="sponsoren-logo">
-                    <img src={omr} alt="omr" />
-                    <img src={canon} alt="canon" />
-                    <img src={jesam} alt="jesam" />
+                    <Omrsvg />
+                    <CanonSvg />
+                    <JesamSvg />
                 </div>
             </div>
         </>

@@ -5,7 +5,7 @@
 
     .auss-banner2-div {
         display: grid;
-        grid-template-columns: 393px auto 393px;
+        grid-template-columns: 360px auto 390px;
         justify-content: space-between;
         gap: 10px;
 
@@ -22,7 +22,6 @@
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
 

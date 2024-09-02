@@ -1,19 +1,36 @@
-@import '../../../styles/';
+@import "../../../styles/";
 
 .the-idea {
     .the-idea-div {
-        display: flex;
-        justify-content: flex-end;
+        display: grid;
+        grid-template-columns: 1fr 380px;
         gap: 40px;
 
-        img {
-            min-width: 500px;
-            max-height: 494px;
+        @media (max-width: 1024px) {
+            gap: 23px;
+        }
+
+        .the-idea-div-image {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                min-width: 500px;
+                max-height: 494px;
+
+                @media (max-width: 1024px) {
+                    min-width: 290px;
+                    max-height: 285px;
+                }
+            }
         }
 
         .the-idea-div-text {
-            padding-top: 244px;
-            max-width: 350px;
+            padding: 245px 30px 0  0;
+
+            @media (max-width: 1024px) {
+                padding-top: 140px;
+            }
 
             h2 {
                 @include aussHead;
