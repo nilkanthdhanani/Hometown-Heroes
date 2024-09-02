@@ -37,7 +37,7 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Big Shoulders Display';
   src: url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-VariableFont_wght.ttf') format('truetype'),
   url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Black.ttf') format('truetype'),
@@ -63,4 +63,4 @@
   url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-SemiBold.ttf') format('truetype'),
   url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Thin.ttf') format('truetype'),
   url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-VariableFont_wght.ttf') format('truetype'),;
-}
+} */
