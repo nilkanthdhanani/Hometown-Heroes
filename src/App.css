@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-VariableFont_wght.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Black.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Bold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-ExtraBold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-ExtraLight.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Light.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Medium.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Regular.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-SemiBold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersDisplay/BigShouldersDisplay-Thin.ttf') format('truetype'),;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Inline Text';
+  src: url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Black.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Bold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-ExtraBold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-ExtraLight.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Light.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Medium.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Regular.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-SemiBold.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-Thin.ttf') format('truetype'),
+  url('./assets/fontFamily/BigShouldersInlineText/BigShouldersInlineText-VariableFont_wght.ttf') format('truetype'),;
+}

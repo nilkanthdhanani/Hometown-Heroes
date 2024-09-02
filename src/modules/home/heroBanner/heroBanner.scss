@@ -9,9 +9,15 @@
 
     .hero-box {
         display: grid;
-        grid-template-columns: 426px 304px auto;
+        grid-template-columns: 425px 290px auto;
         justify-content: space-between;
         gap: 30px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 240px 160px auto;
+            justify-content: space-around;
+            gap: 10px;
+        }
 
         h1 {
             @include heroHead;
@@ -39,9 +45,12 @@
             max-width: 320px;
             max-height: 428px;
 
+            @media (max-width: 1024px) {
+                max-width: 185px;
+            }
+
             img {
                 height: 100%;
-                object-fit: cover;
             }
         }
     }
