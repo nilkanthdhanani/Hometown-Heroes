@@ -10,7 +10,9 @@ export default function ThankYou() {
                     <div className="thank-you-div">
                         <div className="thank-you-head">
                             <h2>THANK YOU</h2>
-                            <img src={thankYou} alt="thank-you" />
+                            <div className="thank-you-image">
+                                <img src={thankYou} alt="thank-you" />
+                            </div>
                         </div>
                         <div className="thank-you-text">
                             <p>We extend our heartfelt gratitude for taking the time to explore the story, mission, and future of Hometown Heroes.</p>

@@ -2,8 +2,8 @@
 
 .thank-you {
     .thank-you-div {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 432px 1fr;
         gap: 30px;
 
         .thank-you-head {
@@ -12,12 +12,17 @@
             h2 {
                 @include aussHeadLab;
                 margin-bottom: 30px;
+                word-break: break-word;
             }
 
-            img {
-                min-width: 393px;
-                max-height: 145px;
-                object-fit: cover;
+            .thank-you-image {
+                padding-right: 40px;
+
+                img {
+                    width: 100%;
+                    max-height: 145px;
+                    object-fit: cover;
+                }
             }
         }
 

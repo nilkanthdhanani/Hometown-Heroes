@@ -4,12 +4,11 @@
     margin-bottom: 50px;
     
     .lebanon-div {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 445px;
         gap: 30px;
 
         .lebanon-text {
-            max-width: 714px;
-
             p {
                 margin-bottom: 30px;
                 @include aussPera;
@@ -28,6 +27,7 @@
                 @include aussHeadLab;
                 text-align: center;
                 margin-bottom: 30px;
+                word-break: break-word;
             }
 
             img {

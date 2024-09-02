@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <div className="contact">
-                <div className="container4">
+                <div className="container12">
                     <div className="contact-div">
                         <h2>IN CASE YOU WANT TO SUPPORT OUR VISION</h2>
                         <p>CONTACT</p>

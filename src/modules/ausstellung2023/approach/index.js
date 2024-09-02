@@ -11,7 +11,9 @@ export default function Approach() {
                         <div className="approach-div1">
                             <div className="approach-div1-head">
                                 <h2>APP RO ACH</h2>
-                                <img src={approach1} alt="approach1" />
+                                <div className="approach-div1-image">
+                                    <img src={approach1} alt="approach1" />
+                                </div>
                             </div>
                             <p>On-Site Documentation and Collaboration with Local Empowerment Organizations: Through purposeful journeys to diverse countries, we establish authentic connections with the local people. We not only listen to their stories, capture their aspirations, and preserve them through compelling photographs and films, but we also actively collaborate with organizations on the ground that provide assistance to the individuals we portray and whose stories we accompany and document.</p>
                         </div>

@@ -47,6 +47,7 @@
             border-radius: 10px;
 
             h3 {
+                position: absolute;
                 @include font47b;
                 color: var(--font-color);
 

@@ -5,34 +5,37 @@
 
     .auss-banner-div {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: flex-end;
+        grid-template-columns: 409px 370px auto;
         gap: 35px;
 
-        h1 {
+        h1 {     
             @include aussHeadm;
+            word-break: break-word;
+            align-self: flex-end;
         }
 
         .auss-banner-div-intro {
-            max-width: 409px;
             padding-top: 137px;
-            
+
             h1 {
                 line-height: 71px;
                 margin-bottom: 78px;
             }
-            
+
             p {
                 @include aussPera;
             }
         }
 
-        img {
-            width: 100%;
-            height: 100%;
+        .auss-banner-image {
             max-width: 387px;
             max-height: 525px;
-            object-fit: cover;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

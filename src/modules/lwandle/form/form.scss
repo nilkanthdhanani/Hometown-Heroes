@@ -22,9 +22,9 @@
 
             h2 {
                 @include donHead;
-                min-width: 368px;
+                max-width: 368px;
                 word-break: break-word;
-            }
+            }   
         }
 
         .form-div {
@@ -71,7 +71,6 @@
                         border-bottom: 1px solid var(--border-color);
                         @include font16b;
                         color: var(--bgcolor);
-                        font-family: var(--font-family-display);
 
                         &:focus {
                             outline: none;

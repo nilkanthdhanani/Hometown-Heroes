@@ -12,6 +12,7 @@
             h2 {
                 @include aussHeadCol;
                 text-align: center;
+                word-break: break-word;
             }
 
             .collabor-div-img {
