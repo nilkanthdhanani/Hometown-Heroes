@@ -6,16 +6,31 @@
         position: relative;
         @include flex-center;
 
+        @media (max-width: 1024px) {
+            padding: 137px 0 35px 0;
+        }
+
         .journey-head {
             position: absolute;
             top: 38px;
             z-index: 2;
+
+            @media (max-width: 1024px) {
+                top: 30px;
+            }
 
             h1 {
                 max-width: 617px;
                 @include aussHeadJou;
                 text-align: center;
                 margin-left: 20px;
+
+                @media (max-width: 1024px) {
+                    max-width: 393px;
+                    font-size: 92px;
+                    line-height: 80px;
+                    margin-left: 0;
+                }
             }
         }
 
@@ -25,13 +40,31 @@
             grid-template-columns: 410px 1fr;
             gap: 35px;
 
+            @media (max-width: 1024px) {
+                grid-template-columns: 237px 1fr;
+            }
+
             .journey-banner-div-intro {
                 padding: 135px 0 35px 0;
+
+                @media (max-width: 1240px) {
+                    padding: 235px 0 35px 0;
+                }
+
+                @media (max-width: 1024px) {
+                    padding: 73px 0 47px 0;
+                }
 
                 h2 {
                     @include aussHeadm;
                     line-height: 71px;
                     margin-bottom: 78px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 115px;
+                        line-height: 41px;
+                        margin-bottom: 45px;
+                    }
                 }
 
                 p {
@@ -44,15 +77,24 @@
             }
 
             .journey-banner-img {
+                padding-top: 75px;
                 display: flex;
-                align-items: flex-end;
                 justify-content: flex-end;
+
+                @media (max-width: 1024px) {
+                    padding-top: 0;
+                }
 
                 img {
                     width: 100%;
                     height: 100%;
                     max-width: 552px;
                     max-height: 484px;
+
+                    @media (max-width: 1024px) {
+                        max-width: 395px;
+                        max-height: 345px;
+                    }
                 }
             }
         }
