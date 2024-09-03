@@ -16,5 +16,11 @@
             color: var(--font-color);
             transition: 0.3s ease-in-out;
         }
+
+        @media (max-width: 1024px) {
+            padding: 8px 15px;
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 }

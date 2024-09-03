@@ -3,6 +3,10 @@
 .auss-list {
     margin-bottom: 80px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 24px;
+    }
+
     a {
         display: block;
         text-align: center;

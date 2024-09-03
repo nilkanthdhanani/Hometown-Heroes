@@ -3,6 +3,10 @@
 .auktionw {
     margin-bottom: 45px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 80px;
+    }
+
     .auktionw-div {
         h2 {
             @include font38b;

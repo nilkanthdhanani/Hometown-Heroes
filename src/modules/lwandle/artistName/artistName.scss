@@ -2,11 +2,21 @@
 
 .artist-name {
     overflow: hidden;
+    margin-bottom: 30px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 60px;
+    }
 
     h3 {
         display: block;
         margin-left: 160px;
         @include font45b;
+
+        @media (max-width: 1024px) {
+            font-size: 33px;
+            line-height: 43px;
+        }
     }
 
     h2 {
@@ -14,12 +24,22 @@
         font-family: var(--font-family-inline);
         margin: 22px 0 16px 0;
         white-space: nowrap;
+
+        @media (max-width: 1024px) {
+            font-size: 150px;
+            line-height: 114px;
+            margin: 16px 0 12px 0;
+        }
     }
 
     p {
         @include font45b;
         white-space: nowrap;
         text-align: right;
-        margin-bottom: 31px;
+
+        @media (max-width: 1024px) {
+            font-size: 33px;
+            line-height: 43px;
+        }
     }
 }
