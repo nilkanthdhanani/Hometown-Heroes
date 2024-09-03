@@ -41,7 +41,8 @@
             gap: 35px;
 
             @media (max-width: 1024px) {
-                grid-template-columns: 237px 1fr;
+                grid-template-columns: 237px auto;
+                justify-content: space-around;
             }
 
             .journey-banner-div-intro {
