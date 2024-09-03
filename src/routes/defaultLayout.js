@@ -4,24 +4,14 @@ import Header from '../commen/header';
 import Footer from '../commen/footer';
 
 export default function DefaultLayout() {
-  const font = new FontFace(
-    'Big Shoulders Display',
-    'url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Big+Shoulders+Inline+Text:wght@100..900&display=swap)'
-  );
-
-  font.load().then(function (loadedFont) {
-    document.fonts.add(loadedFont);
-
-    document.body.style.fontFamily = '"Big Shoulders Display", sans-serif';
-  }).catch(function (error) {
-    console.error('Font failed to load:', error);
-  });
-
   const location = useLocation();
 
   const specialPages = ['/donate', '/auss2024', '/lwandle'];
+  const homeAndImpressum = ['/', '/impressum'];
 
   const isSpecialPage = specialPages.includes(location.pathname);
+  const isHomeOrImpressum = homeAndImpressum.includes(location.pathname);
+
   const backgroundColor = isSpecialPage ? '#1a1a1a' : '#f6f1e5';
   const color = isSpecialPage ? '#f6f1e5' : '#1b1b1b';
 
@@ -31,11 +21,17 @@ export default function DefaultLayout() {
     document.body.style.backgroundColor = backgroundColor;
     document.body.style.color = color;
 
+    if (isHomeOrImpressum) {
+      document.getElementById('root').classList.add('home-impressum-style');
+    } else {
+      document.getElementById('root').classList.remove('home-impressum-style');
+    }
+
     return () => {
       document.body.style.backgroundColor = '';
       document.body.style.color = '';
     };
-  }, [backgroundColor, color]);
+  }, [backgroundColor, color, isHomeOrImpressum]);
 
   return (
     <>
