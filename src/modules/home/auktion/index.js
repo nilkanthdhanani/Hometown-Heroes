@@ -1,7 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './auktion.scss';
 
 export default function Auktion() {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
+
+    useEffect(() => {
+        const targetDate = new Date('2024-09-16T23:59:59');
+
+        const calculateTimeLeft = () => {
+            const now = new Date();
+            const difference = targetDate - now;
+
+            let timeLeft = {};
+
+            if (difference > 0) {
+                timeLeft = {
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((difference / 1000 / 60) % 60),
+                    seconds: Math.floor((difference / 1000) % 60),
+                };
+            } else {
+                timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0, };
+            }
+
+            setTimeLeft(timeLeft);
+        };
+
+        const timer = setInterval(calculateTimeLeft, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <>
             <div className="auktion">
@@ -11,26 +46,26 @@ export default function Auktion() {
                     </div>
                     <div className="auktion-timer">
                         <div className="auktion-timer-text">
-                            <h3>13</h3>
+                            <h3>{timeLeft.days}</h3>
                         </div>
                         <div className="auktion-timer-text">
-                            <h3>23</h3>
+                            <h3>{timeLeft.hours}</h3>
                         </div>
                         <div className="auktion-timer-text">
-                            <h3>59</h3>
+                            <h3>{timeLeft.minutes}</h3>
                         </div>
                         <div className="auktion-timer-text">
-                            <h3>59</h3>
+                            <h3>{timeLeft.seconds}</h3>
                         </div>
                     </div>
                     <div className="auction-timer-title">
                         <span>DAYS</span>
                         <span>HOURS</span>
                         <span>MINUTES</span>
-                        <span>seconds</span>
+                        <span>SECONDS</span>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
