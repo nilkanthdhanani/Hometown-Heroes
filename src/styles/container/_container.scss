@@ -66,6 +66,10 @@
     max-width: 970px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media (max-width: 1024px) {
+        max-width: 755px;
+    }
 }
 
 .container12 {

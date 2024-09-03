@@ -3,8 +3,17 @@
 .impressum {
     margin: 67px 0 230px 0;
 
+    @media (max-width: 1024px) {
+        margin: 25px 0 100px 0;
+    }
+
     h2 {
         @include font76;
+
+        @media (max-width: 1024px) {
+            font-size: 76px;
+            line-height: 71px;
+        }
     }
 
     p {
@@ -18,7 +27,13 @@
         margin-right: 5px;
         display: flex;
         justify-content: flex-end;
-        gap: 60px;
+        gap: 30px 60px;
+
+        @media (max-width: 1024px) {
+            margin: 100px 21px 0 0;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
 
         .impressum-link-div {
             h3,

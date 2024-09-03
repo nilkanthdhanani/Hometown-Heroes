@@ -22,9 +22,9 @@ export default function DefaultLayout() {
     document.body.style.color = color;
 
     if (isHomeOrImpressum) {
-      document.getElementById('root').classList.add('home-impressum-style');
+      document.getElementById('root').classList.add('footer-space');
     } else {
-      document.getElementById('root').classList.remove('home-impressum-style');
+      document.getElementById('root').classList.remove('footer-space');
     }
 
     return () => {

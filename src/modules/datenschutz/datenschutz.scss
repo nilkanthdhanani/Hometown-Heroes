@@ -3,24 +3,34 @@
 .datenschutz {
     margin: 67px 0 69px 0;
 
+    @media (max-width: 1024px) {
+        margin: 25px 0 28px 0;
+    }
+
     .datenschutz-div {
         h2 {
             @include font76;
             margin-bottom: 30px;
+
+            @media (max-width: 1024px) {
+                font-size: 76px;
+                line-height: 71px;
+            }
         }
 
         .datenschutz-div-text {
             padding-bottom: 30px;
 
-            h3,
-            p {
+            h3 {
                 @include font20b;
                 font-weight: 900;
                 letter-spacing: -0.06em;
             }
 
             p {
+                @include font20b;
                 font-weight: 400;
+                letter-spacing: -0.06em;
             }
         }
     }
