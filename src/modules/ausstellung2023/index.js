@@ -8,7 +8,7 @@ import HometownJune from './hometownJune';
 import AussImages from './aussImages';
 import TheBook from './theBook';
 import TheApparel from './theApparel';
-import Collabor from './collabor';
+import Collab from './collab';
 import TheFuture from './theFuture';
 import Equal from './equal';
 import Lebanon from './lebanon';
@@ -27,7 +27,7 @@ export default function Ausstellung2023() {
             <AussImages />
             <TheBook />
             <TheApparel />
-            <Collabor />
+            <Collab />
             <TheFuture />
             <Equal />
             <Lebanon />

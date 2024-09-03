@@ -1,23 +1,42 @@
 @import "../../../styles/";
 
 .equal-main {
-    margin: 100px 0 87px 15px;
-
     .equal {
         display: flex;
         gap: 30px;
+        margin: 100px 34px 87px 28px;
+
+        @media (max-width: 1024px) {
+            gap: 17px;
+            margin: 10px 15px 32px 20px;
+        }
 
         img {
-            min-width: 446px;
+            width: 100%;
+            max-width: 446px;
             max-height: 632px;
+
+            @media (max-width: 1024px) {
+                max-width: 258px;
+                max-height: 365px;
+            }
         }
 
         .equal-text {
             max-width: 650px;
 
+            @media (max-width: 1024px) {
+                max-width: 378px;
+            }
+
             p {
                 margin-bottom: 30px;
                 @include aussPera;
+
+                @media (max-width: 1024px) {
+                    @include aussPeraRes;
+                    margin-bottom: 15px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;

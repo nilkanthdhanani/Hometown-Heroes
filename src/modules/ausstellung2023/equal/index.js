@@ -6,7 +6,7 @@ export default function Equal() {
     return (
         <>
             <div className="equal-main">
-                <div className="container7">
+                <div className="container4">
                     <div className="equal">
                         <img src={equal} alt="equal" />
                         <div className="equal-text">

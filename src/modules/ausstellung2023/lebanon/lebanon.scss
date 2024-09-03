@@ -2,17 +2,31 @@
 
 .lebanon {
     margin-bottom: 50px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 30px;
+    }
     
     .lebanon-div {
         display: grid;
         grid-template-columns: 1fr 445px;
         gap: 30px;
 
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr 255px;
+            gap: 17px;
+        }
+
         .lebanon-text {
             p {
                 margin-bottom: 30px;
                 @include aussPera;
                 text-align: right;
+
+                @media (max-width: 1024px) {
+                    @include aussPeraRes;
+                    margin-bottom: 15px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
@@ -23,16 +37,30 @@
         .lebanon-head {
             margin-right: 8px;
 
+            @media (max-width: 1024px) {
+                margin-right: 5px;
+            }
+
             h2 {
                 @include aussHeadLab;
                 text-align: center;
                 margin-bottom: 30px;
                 word-break: break-word;
+
+                @media (max-width: 1024px) {
+                    font-size: 60px;
+                    line-height: 60px;
+                    margin-bottom: 17px;
+                }
             }
 
             img {
                 width: 100%;
                 max-height: 209px;
+
+                @media (max-width: 1024px) {
+                    max-height: 120px;
+                }
             }
 
             h3 {
@@ -41,6 +69,12 @@
                 line-height: 20px;
                 text-align: center;
                 margin-top: 5px;
+
+                @media (max-width: 1024px) {
+                    font-size: 8px;
+                    line-height: 12px;
+                    margin-top: 3px;
+                }
             }
         }
     }

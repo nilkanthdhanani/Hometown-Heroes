@@ -2,18 +2,34 @@
 
 .the-vision {
     margin: 93px 0 100px 0;
+
+    @media (max-width: 1024px) {
+        margin: 60px 0;
+    }
     
     .the-vision-div {
         display: flex;
         justify-content: center;
         gap: 47px;
 
+        @media (max-width: 1024px) {
+            gap: 27px;
+        }
+
         .the-vision-div1 {
             max-width: 354px;
+
+            @media (max-width: 1024px) {
+                max-width: 205px;
+            }
 
             img {
                 width: 100%;
                 max-height: 225px;
+
+                @media (max-width: 1024px) {
+                    max-height: 130px;
+                }
             }
 
             h2 {
@@ -21,17 +37,35 @@
                 text-align: right;
                 @include aussHead;
                 word-break: break-word;
+
+                @media (max-width: 1024px) {
+                    font-size: 85px;
+                    line-height: 75px;
+                    margin: 27px 18px 0 0;
+                }
             }
         }
 
         .the-vision-div2 {
             max-width: 357px;
 
+            @media (max-width: 1024px) {
+                max-width: 207px;
+            }
+
             p {
                 @include aussPera;
 
+                @media (max-width: 1024px) {
+                    @include aussPeraRes;
+                }
+
                 &:last-child {
                     margin-top: 30px;
+
+                    @media (max-width: 1024px) {
+                        margin-top: 15px;
+                    }
                 }
             }
         }

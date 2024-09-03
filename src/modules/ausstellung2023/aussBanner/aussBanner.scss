@@ -19,7 +19,7 @@
             gap: 10px;
         }
 
-        h1 {     
+        h1 {
             @include aussHeadm;
             word-break: break-word;
             align-self: flex-end;
@@ -51,8 +51,7 @@
                 @include aussPera;
 
                 @media (max-width: 1024px) {
-                    font-size: 12px;
-                    line-height: 17px;
+                    @include aussPeraRes;
                 }
             }
         }

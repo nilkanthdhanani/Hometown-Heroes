@@ -5,6 +5,10 @@
         padding-top: 45px;
         position: relative;
 
+        @media (max-width: 1024px) {
+            padding-top: 25px;
+        }
+
         .the-gallary-head {
             position: absolute;
             top: 0;
@@ -14,6 +18,11 @@
                 @include aussHeadGal;
                 text-align: center;
                 position: relative;
+
+                @media (max-width: 1024px) {
+                    font-size: 85px;
+                    line-height: 80px;
+                }
             }
         }
 
@@ -22,6 +31,10 @@
                 width: 100%;
                 max-height: 563px;
                 object-fit: cover;
+
+                @media (max-width: 1024px) {
+                    max-height: 325px;
+                }
             }
         }
     }

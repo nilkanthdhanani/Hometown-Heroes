@@ -3,21 +3,39 @@
 .hometown-june {
     margin: 100px 0;
 
+    @media (max-width: 1024px) {
+        margin: 60px 0;
+    }
+
     .hometown-june-div {
         display: flex;
         gap: 60px;
         padding: 0 12px;
 
+        @media (max-width: 1024px) {
+            gap: 35px;
+        }
+
         img {
             min-width: 476px;
             max-height: 648px;
             object-fit: cover;
+
+            @media (max-width: 1024px) {
+                min-width: 275px;
+                max-height: 375px;
+            }
         }
 
         .hometown-june-content {
             p {
                 @include aussPera;
                 margin-bottom: 30px;
+
+                @media (max-width: 1024px) {
+                    @include aussPeraRes;
+                    margin-bottom: 15px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
