@@ -21,13 +21,11 @@
 
         .journey-banner-div {
             width: 100%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 410px 1fr;
             gap: 35px;
 
             .journey-banner-div-intro {
-                max-width: 410px;
                 padding: 135px 0 35px 0;
 
                 h2 {
@@ -42,9 +40,14 @@
             }
 
             .journey-banner-img {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+
                 img {
                     width: 100%;
-                    min-width: 550px;
+                    height: 100%;
+                    max-width: 552px;
                     max-height: 484px;
                 }
             }
