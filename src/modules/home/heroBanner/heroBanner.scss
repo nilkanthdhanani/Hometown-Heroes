@@ -7,6 +7,14 @@
         padding: 70px 0 60px 0;
     }
 
+    @media (max-width: 576px) {
+        padding: 32px 0 40px 0;
+
+        .container {
+            padding: 0;
+        }
+    }
+
     .hero-box {
         display: grid;
         grid-template-columns: 425px 290px auto;
@@ -19,6 +27,11 @@
             gap: 10px;
         }
 
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+            overflow: hidden;
+        }
+
         h1 {
             @include heroHead;
             word-break: break-word;
@@ -26,6 +39,14 @@
             @media (max-width: 1024px) {
                 font-size: 100px;
                 line-height: 83px;
+            }
+            
+            @media (max-width: 576px) {
+                word-break: keep-all;
+                grid-column: span 2;
+                font-size: 174px;
+                line-height: 145px;
+                margin-bottom: 40px;
             }
         }
 
@@ -38,6 +59,13 @@
                 font-size: 30px;
                 line-height: 32px;
             }
+
+            @media (max-width: 576px) {
+                margin-left: 20px;
+                max-width: 140px;
+                font-size: 25px;
+                line-height: 26px;
+            }
         }
 
         .hero-box-image {
@@ -47,6 +75,12 @@
 
             @media (max-width: 1024px) {
                 max-width: 185px;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 150px;
+                max-height: 200px;
+                margin: 0 20px 0 0;
             }
 
             img {
