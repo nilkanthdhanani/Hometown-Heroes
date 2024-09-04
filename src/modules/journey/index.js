@@ -9,7 +9,7 @@ export default function Journey() {
             <div className="journey">
                 <div className="journey-banner">
                     <div className="containerH">
-                        <div className="journey-banner-div">
+                        <div className="journey-banner-main">
                             <div className="journey-head">
                                 <h1>FOLLOW THE JOURNEY</h1>
                             </div>
