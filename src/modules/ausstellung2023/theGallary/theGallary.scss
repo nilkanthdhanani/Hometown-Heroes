@@ -1,6 +1,12 @@
 @import "../../../styles/";
 
 .gallary {
+    @media (max-width: 576px) {
+        .container3 {
+            padding: 0;
+        }
+    }
+
     .gallary-div {
         padding-top: 45px;
         position: relative;
@@ -14,6 +20,12 @@
             top: 0;
             width: 100%;
 
+            @media (max-width: 576px) {
+                position: relative;
+                margin-bottom: 48px;
+                overflow: hidden;
+            }
+
             h2 {
                 @include aussHeadGal;
                 text-align: center;
@@ -23,10 +35,20 @@
                     font-size: 85px;
                     line-height: 80px;
                 }
+
+                @media (max-width: 576px) {
+                    font-size: 100px;
+                    line-height: 86px;
+                    white-space: nowrap;
+                }
             }
         }
 
         .gallary-image {
+            @media (max-width: 576px) {
+                padding: 0 20px;
+            }
+
             img {
                 width: 100%;
                 max-height: 563px;
@@ -34,6 +56,10 @@
 
                 @media (max-width: 1024px) {
                     max-height: 325px;
+                }
+
+                @media (max-width: 576px) {
+                    max-height: 150px;
                 }
             }
         }

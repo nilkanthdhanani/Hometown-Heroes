@@ -1,6 +1,12 @@
 @import "../../../styles/";
 
 .thank-you {
+    @media (max-width: 576px) {
+        .container4 {
+            padding: 0;
+        }
+    }
+
     .thank-you-div {
         display: grid;
         grid-template-columns: 432px 1fr;
@@ -11,7 +17,16 @@
             gap: 17px;
         }
 
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
         .thank-you-head {
+            @media (max-width: 576px) {
+                overflow: hidden;
+            }
+
             h2 {
                 @include aussHeadLab;
                 margin-bottom: 30px;
@@ -21,6 +36,15 @@
                     font-size: 75px;
                     line-height: 70px;
                     margin-bottom: 10px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 98px;
+                    line-height: 85px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    word-break: normal;
+                    white-space: nowrap;
                 }
             }
 
@@ -53,6 +77,13 @@
 
                 &:last-child {
                     margin-bottom: 0;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0 20px;
+                    text-align: center;
                 }
             }
         }

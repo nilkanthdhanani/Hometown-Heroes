@@ -1,6 +1,12 @@
 @import "../../../styles/";
 
 .future {
+    @media (max-width: 576px) {
+        .container10 {
+            padding: 0;
+        }
+    }
+
     .the-future {
         text-align: center;
 
@@ -17,32 +23,50 @@
                 line-height: 70px;
             }
 
+            @media (max-width: 576px) {
+                font-size: 98px;
+                line-height: 85px;
+                overflow: hidden;
+            }
+
             &:last-child {
                 line-height: 107px;
 
                 @media (max-width: 1024px) {
                     line-height: 62px;
                 }
+
+                @media (max-width: 576px) {
+                    font-size: 108px;
+                    line-height: 94px;
+                    white-space: nowrap;
+                }
             }
         }
 
-        img {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-
-            @media (max-width: 1024px) {
-                max-height: 205px;
+        .the-future-image {
+            @media (max-width: 576px) {
+                margin: 30px 0;
             }
-        }
 
-        h3 {
-            margin: 5px 0;
-            @include aussPera;
+            img {
+                width: 100%;
+                max-height: 350px;
+                object-fit: cover;
 
-            @media (max-width: 1024px) {
-                @include aussPeraRes;
-                margin: 3px 0;
+                @media (max-width: 1024px) {
+                    max-height: 205px;
+                }
+            }
+
+            h3 {
+                margin: 5px 0;
+                @include aussPera;
+
+                @media (max-width: 1024px) {
+                    @include aussPeraRes;
+                    margin: 3px 0;
+                }
             }
         }
     }

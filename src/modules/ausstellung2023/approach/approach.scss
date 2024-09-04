@@ -12,11 +12,21 @@
             margin: 0 25px 0 auto;
         }
 
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            margin: 0;
+            max-width: 100%;
+        }
+
         .approach-div1 {
             margin-top: -160px;
 
             @media (max-width: 1024px) {
                 margin-top: -110px;
+            }
+
+            @media (max-width: 576px) {
+                margin-top: 0;
             }
 
             .approach-div1-head {
@@ -31,6 +41,12 @@
                     margin-bottom: 25px;
                 }
 
+                @media (max-width: 576px) {
+                    grid-template-columns: 1fr;
+                    gap: 0;
+                    margin-bottom: 40px;
+                }
+
                 h2 {
                     @include aussHead;
                     margin-bottom: 125px;
@@ -41,9 +57,22 @@
                         line-height: 75px;
                         margin-bottom: 72px;
                     }
+
+                    @media (max-width: 576px) {
+                        margin: 0 auto;
+                        max-width: 290px;
+                        text-align: center;
+                        font-size: 148px;
+                        line-height: 130px;
+                        position: relative;
+                    }
                 }
 
                 .approach-div1-image {
+                    @media (max-width: 576px) {
+                        margin-top: -100px;
+                    }
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -52,6 +81,10 @@
 
                         @media (max-width: 1024px) {
                             max-height: 295px;
+                        }
+
+                        @media (max-width: 576px) {
+                            max-height: 510px;
                         }
                     }
                 }
@@ -63,6 +96,12 @@
                 @media (max-width: 1024px) {
                     @include aussPeraRes;
                 }
+
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                }
             }
         }
 
@@ -73,6 +112,11 @@
             @media (max-width: 1024px) {
                 padding: 20px 10px 0 30px;
                 max-height: 185px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 40px 0 0 0;
+                max-height: 240px;
             }
 
             img {

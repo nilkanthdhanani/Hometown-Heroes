@@ -18,5 +18,9 @@
         &:last-child {
             border-bottom: 1px solid var(--border-color);
         }
+
+        @media (max-width: 576px) {
+            font-size: 26px;
+        }
     }
 }

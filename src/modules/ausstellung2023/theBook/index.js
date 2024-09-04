@@ -20,7 +20,9 @@ export default function TheBook() {
                                 <p>Join us as we explore the world through our lens, capturing the essence of humanity in every corner of the globe.</p>
                             </div>
                         </div>
-                        <h2>SAMPLES</h2>
+                        <div className="sample-head">
+                            <h2>SAMPLES</h2>
+                        </div>
                         <div className="the-image-book">
                             <img src={theBook1} alt="theBook1" />
                             <img src={theBook2} alt="theBook2" />

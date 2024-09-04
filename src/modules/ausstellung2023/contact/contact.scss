@@ -7,7 +7,19 @@
         margin: 30px 0;
     }
 
+    @media (max-width: 576px) {
+        margin: 30px 0 90px 0;
+
+        .container12 {
+            padding: 0;
+        }
+    }
+
     .contact-div {
+        @media (max-width: 576px) {
+            overflow: hidden;
+        }
+
         h2 {
             text-align: center;
             @include aussHeadLab;
@@ -17,6 +29,11 @@
                 font-size: 56px;
                 line-height: 50px;
                 margin-bottom: 30px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 98px;
+                line-height: 85px;
             }
         }
 
@@ -29,6 +46,11 @@
                 @include aussPeraRes;
                 margin-bottom: 15px;
             }
+
+            @media (max-width: 576px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
 
         a {
@@ -39,6 +61,11 @@
 
             @media (max-width: 1024px) {
                 @include aussPeraRes;
+            }
+
+            @media (max-width: 576px) {
+                font-style: 14px;
+                line-height: 20px;
             }
         }
     }

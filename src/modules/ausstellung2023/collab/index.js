@@ -9,7 +9,7 @@ export default function Collab() {
                 <div className="container6">
                     <div className="collab">
                         <div className="collab-div">
-                            <h2>COLLABOR<br />ATIONS</h2>
+                            <h2>COLLABORATIONS</h2>
                             <div className="collab-div-img">
                                 <img src={collabration1} alt="collabration1" />
                                 <p>HOMETOWN HEROES X YOUNG BAFANA</p>
@@ -18,7 +18,7 @@ export default function Collab() {
                                 Young Bafana, a non-profit organization dedicated to the holistic development of underprivileged youth in South Africa, was our inaugural partner. Through our first Hometown Heroes exhibition, we raised funds to support their programs, reinforcing our commitment to making a meaningful impact by selling our prints at the gallery.</p>
                         </div>
                         <div className="collab-div">
-                            <h2>COLLABOR<br />ATIONS</h2>
+                            <h2>COLLABORATIONS</h2>
                             <div className="collab-div-img second">
                                 <img src={collabration2} alt="collabration2" />
                                 <span>HOMETOWN HEROES X CANON</span>
