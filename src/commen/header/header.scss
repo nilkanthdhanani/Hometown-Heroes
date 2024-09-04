@@ -7,20 +7,35 @@ header {
         padding: 23px 0;
     }
 
+    @media (max-width: 576px) {
+        padding: 82px 0 0 0;
+        position: relative;
+    }
+
     .header-div {
         @include flex-between;
 
-        svg {
-            display: block;
-            fill: var(--color-black);
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
 
-            @media (max-width: 1024px) {
-                max-width: 187px;
-                height: auto;
+        .header-div-logo {
+            svg {
+                display: block;
+                fill: var(--color-black);
+
+                @media (max-width: 1024px) {
+                    max-width: 187px;
+                    height: auto;
+                }
+
+                @media (max-width: 576px) {
+                    max-width: 176px;
+                }
             }
         }
 
-        .header-links {
+        nav {
             @include flex;
             gap: 38px;
 
@@ -39,19 +54,50 @@ header {
                     line-height: 11px;
                 }
             }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+
+        .header-menu {
+            display: none;
+            position: absolute;
+            top: 44px;
+            right: 44px;
+
+            svg {
+                fill: var(--font-color);
+                cursor: pointer;
+            }
+
+            @media (max-width: 576px) {
+                display: block;
+            }
         }
     }
 }
 
 .special-header {
     .header-div {
-        svg {
-            fill: var(--color-white);
+        .header-div-logo {
+            svg {
+                fill: var(--color-white);
+            }
         }
-        .header-links {
+        nav {
             a {
                 color: var(--bgcolor);
             }
         }
+        .header-menu {
+            svg {
+                fill: var(--bgcolor);
+            }
+        }
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }

@@ -2,6 +2,9 @@ import React from 'react'
 import './footer.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 import FooterLogo from '../../assets/images/svg/footerLogo';
+import PowerdSvg from '../../assets/images/svg/powerdSvg';
+import JesamSvgFooter from '../../assets/images/svg/jesamSvgFooter';
+import DataSvg from '../../assets/images/svg/dataSvg';
 
 export default function Footer() {
   const location = useLocation();
@@ -16,7 +19,14 @@ export default function Footer() {
           <NavLink to={"/datenschutz"}>DATENSCHUTZ</NavLink>
         </div>
         <div className="footer-logo">
-          <FooterLogo />
+          <NavLink to={'/'}><FooterLogo /></NavLink>
+        </div>
+        <div className="footer-logo-respo">
+          <NavLink to={'/'}>
+            <PowerdSvg />
+            <JesamSvgFooter />
+            <DataSvg />
+          </NavLink>
         </div>
       </footer>
     </>

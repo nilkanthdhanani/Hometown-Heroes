@@ -1,0 +1,109 @@
+@import "../../../styles/";
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background-color: var(--font-color);
+    z-index: 999;
+    padding-top: 88px;
+    transition: left 0.3s ease-in-out;
+
+    &.open {
+        left: 0;
+    }
+
+    .close-svg {
+        position: absolute;
+        top: 45px;
+        right: 47px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    .sidebar-main {
+        height: calc(100vh - 88px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sidebar-content {
+            padding: 0 29px;
+
+            .sidebar-line {
+                margin: 0 33px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .sidebar-text-first {
+                a {
+                    display: block;
+                    padding: 20px 0;
+                    @include footerFont;
+                    font-weight: 500;
+                    color: var(--color-white);
+                    font-family: var(--font-family-inline);
+
+                    span {
+                        font-size: 25px;
+                        font-family: var(--font-family-inline);
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+            .sidebar-text-second {
+                padding: 0 33px;
+
+                a {
+                    display: block;
+                    padding: 20px 0;
+                    text-align: right;
+                    @include font20H;
+                    color: var(--color-white);
+                    font-family: var(--font-family-inline);
+                }
+            }
+        }
+
+        .sidebar-footer {
+            padding: 0 37px 20px 22px;
+            color: #fff;
+
+            .footer-links {
+                display: flex;
+                margin-bottom: 20px;
+
+                a {
+                    display: block;
+                    min-width: 96px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: var(--bgcolor);
+                }
+            }
+
+            .footer-logo-respo {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 17px;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 7px;
+
+                    svg {
+                        fill: var(--bgcolor);
+                    }
+                }
+            }
+        }
+    }
+}
