@@ -1,14 +1,14 @@
 @import "../../../styles/";
 
 .content {
-    padding: 70px 0;
+    margin: 70px 0;
 
     @media (max-width: 1024px) {
-        padding: 60px 0 60px 0;
+        margin: 60px 0 60px 0;
     }
 
     @media (max-width: 576px) {
-        padding: 40px 0 60px 0;
+        margin: 40px 0 60px 0;
     }
 
     p {

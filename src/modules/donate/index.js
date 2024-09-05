@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Form from './form';
 import ArtistName from '../lwandle/artistName';
-import AuktionWhite from '../lwandle/auktionWhite';
+import Timer from '../../components/timer';
 import Sponsoren from './sponsoren';
 
 export default function Donate() {
@@ -23,7 +23,7 @@ export default function Donate() {
         <>
             <Form />
             <ArtistName />
-            {windowWidth >= 576 && <AuktionWhite />}
+            {windowWidth >= 576 && <Timer theme="light" /> }
             <Sponsoren />
         </>
     );

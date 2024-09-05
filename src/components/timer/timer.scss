@@ -1,6 +1,21 @@
-@import "../../../styles/";
+@import "../../styles/";
 
-.auktionw {
+.timer {
+    &.dark {
+        --timer-bg: var(--font-color);
+        --timer-font: var(--bgcolor);
+        --timer-line: var(--font-color);
+        margin: 0;
+    }
+
+    &.light {
+        --timer-bg: var(--bgcolor);
+        --timer-font: var(--font-color);
+        --timer-line: var(--bgcolor);
+    }
+}
+
+.timer {
     margin-bottom: 45px;
 
     @media (max-width: 1024px) {
@@ -9,13 +24,12 @@
 
     @media (max-width: 576px) {
         margin-bottom: 60px;
-        
         .container {
             padding: 0;
         }
     }
 
-    .auktionw-div {
+    .timer-header {
         h2 {
             @include font38b;
             text-align: center;
@@ -28,13 +42,13 @@
             }
 
             @media (max-width: 576px) {
-                margin-bottom: 24px;
-                line-height: 22px;
+                margin-bottom: 0;
+                line-height: 55px;
             }
         }
     }
 
-    .auktionw-timer {
+    .timer-countdown {
         @include flex-center;
         gap: 15px;
         position: relative;
@@ -49,11 +63,11 @@
             top: 50%;
             width: calc(100% - 1px);
             max-width: 610px;
-            border: 1.5px solid var(--bgcolor);
+            border: 1.5px solid var(--timer-line);
 
             @media (max-width: 1024px) {
                 max-width: 350px;
-                border: 0.9px solid var(--bgcolor);
+                border: 1px solid var(--timer-line);
             }
 
             @media (max-width: 576px) {
@@ -61,16 +75,17 @@
             }
         }
 
-        .auktionw-timer-text {
+        .timer-text {
             position: relative;
             z-index: 2;
             padding: 76px 46px;
             @include flex-center;
-            background-color: var(--bgcolor);
+            background-color: var(--timer-bg);
             border-radius: 10px;
 
             @media (max-width: 1024px) {
                 padding: 43px 26px;
+                border-radius: 7px;
             }
 
             @media (max-width: 576px) {
@@ -80,7 +95,7 @@
             h3 {
                 position: absolute;
                 @include font47b;
-                color: var(--font-color);
+                color: var(--timer-font);
 
                 @media (max-width: 1024px) {
                     font-size: 27px;
@@ -95,7 +110,7 @@
         }
     }
 
-    .auctionw-timer-title {
+    .timer-labels {
         @include flex-center;
         gap: 15px;
         margin-top: 17px;
