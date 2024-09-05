@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import Header from '../commen/header';
-import Footer from '../commen/footer';
+import Header from '../common/header';
+import Footer from '../common/footer';
 
 export default function DefaultLayout() {
   const location = useLocation();
 
-  const specialPages = ['/donate', '/auss2024', '/lwandle'];
-  const homeAndImpressum = ['/', '/impressum'];
+  const specialPages = useMemo(() => ['/donate', '/auss2024', '/lwandle'], []);
+  const homeAndImpressum = useMemo(() => ['/', '/impressum'], []);
 
   const isSpecialPage = specialPages.includes(location.pathname);
   const isHomeOrImpressum = homeAndImpressum.includes(location.pathname);
@@ -18,13 +18,18 @@ export default function DefaultLayout() {
   const shouldShowFooter = location.pathname !== '/auss2024';
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  useEffect(() => {
     document.body.style.backgroundColor = backgroundColor;
     document.body.style.color = color;
 
+    const rootElement = document.getElementById('root');
     if (isHomeOrImpressum) {
-      document.getElementById('root').classList.add('footer-space');
+      rootElement.classList.add('footer-space');
     } else {
-      document.getElementById('root').classList.remove('footer-space');
+      rootElement.classList.remove('footer-space');
     }
 
     return () => {
