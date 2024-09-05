@@ -5,6 +5,10 @@
 
     @media (max-width: 1024px) {
         padding: 18px 0 70px 0;
+
+        .containerH {
+            max-width: 755px;
+        }
     }
 
     @media (max-width: 576px) {
@@ -17,14 +21,13 @@
 
     .auss-banner-div {
         display: grid;
-        grid-template-columns: 410px 355px auto;
+        grid-template-columns: 410px 355px 1fr;
         justify-content: space-between;
         gap: 30px;
 
         @media (max-width: 1024px) {
-            grid-template-columns: 240px 205px auto;
-            justify-content: space-around;
-            gap: 10px;
+            grid-template-columns: 240px 205px 1fr;
+            gap: 20px;
         }
 
         @media (max-width: 576px) {
