@@ -3,11 +3,20 @@
 .sponsoren {
     margin: 90px 0 80px 0;
 
+    @media (max-width: 576px) {
+        margin: 30px 0 140px 0;
+    }
+
     h2 {
         text-align: center;
         @include font39b;
         font-family: var(--font-family-inline);
         margin-bottom: 60px;
+
+        @media (max-width: 576px) {
+            font-size: 25px;
+            margin-bottom: 35px;
+        }
     }
 
     .sponsoren-logo {
@@ -18,6 +27,19 @@
         svg {
             cursor: pointer;
             fill: var(--color-white);
+
+            @media (max-width: 576px) {
+                max-width: 57px;
+                height: auto;
+
+                &:nth-child(2) {
+                    max-width: 134px;
+                }
+
+                &:last-child {
+                    max-width: 103px;
+                }
+            }
         }
     }
 }

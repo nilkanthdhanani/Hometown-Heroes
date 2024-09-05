@@ -7,30 +7,87 @@
         margin: 25px 0 28px 0;
     }
 
+    @media (max-width: 576px) {
+        margin: 30px 0 50px 0;
+
+        .container11 {
+            padding: 0;
+        }
+    }
+
     .datenschutz-div {
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         h2 {
             @include font76;
             margin-bottom: 30px;
 
-            @media (max-width: 1024px) {
-                font-size: 76px;
-                line-height: 71px;
+            @media (max-width: 576px) {
+                text-align: center;
+                word-break: break-all;
             }
         }
 
         .datenschutz-div-text {
             padding-bottom: 30px;
 
+            @media (max-width: 576px) {
+                padding: 0 20px;
+            }
+
             h3 {
                 @include font20b;
                 font-weight: 900;
                 letter-spacing: -0.06em;
+
+                @media (max-width: 576px) {
+                    font-size: 35px;
+                    line-height: 44px;
+                    text-align: center;
+
+                    &:last-of-type {
+                        margin: 30px 0;
+                    }
+                }
             }
 
-            p {
+            p,
+            h4 {
                 @include font20b;
                 font-weight: 400;
                 letter-spacing: -0.06em;
+
+                @media (max-width: 576px) {
+                    font-size: 35px;
+                    line-height: 44px;
+                    font-weight: 300;
+                    text-align: center;
+                    padding: 0 20px;
+                }
+            }
+
+            h4 {
+                @media (max-width: 576px) {
+                    max-width: 160px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .default {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: none;
+            
+            @media (max-width: 576px) {
+                display: block;
             }
         }
     }

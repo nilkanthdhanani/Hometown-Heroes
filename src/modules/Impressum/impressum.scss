@@ -7,42 +7,78 @@
         margin: 25px 0 100px 0;
     }
 
-    h2 {
-        @include font76;
+    @media (max-width: 576px) {
+        margin: 30px 0 50px 0;
 
-        @media (max-width: 1024px) {
-            font-size: 76px;
-            line-height: 71px;
+        .container11 {
+            padding: 0;
         }
     }
 
-    p {
-        @include font20b;
-        font-weight: 300;
-        letter-spacing: -0.06em;
-        margin: 30px 0;
-    }
-
-    .impressum-link {
-        margin-right: 5px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px 60px;
-
-        @media (max-width: 1024px) {
-            margin: 100px 21px 0 0;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+    .impressum-main {
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
         }
 
-        .impressum-link-div {
-            h3,
-            h4 {
-                @include font20ub;
+        h2 {
+            @include font76;
+
+            @media (max-width: 576px) {
+                text-align: center;
+                word-break: break-all;
+            }
+        }
+
+        p {
+            @include font20b;
+            font-weight: 300;
+            letter-spacing: -0.06em;
+            margin-top: 30px;
+
+            @media (max-width: 576px) {
+                order: 1;
+                font-size: 35px;
+                line-height: 44px;
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+
+        .impressum-link {
+            margin-right: 5px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px 60px;
+
+            @media (max-width: 1024px) {
+                margin: 100px 21px 0 0;
+                justify-content: flex-start;
+                flex-wrap: wrap;
             }
 
-            h4 {
-                font-weight: 300;
+            @media (max-width: 576px) {
+                margin: 50px 0 0 0;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .impressum-link-div {
+                h3,
+                h4 {
+                    @include font20ub;
+
+                    @media (max-width: 576px) {
+                        font-size: 35px;
+                        line-height: 44px;
+                    }
+                }
+
+                h4 {
+                    font-weight: 300;
+                }
             }
         }
     }

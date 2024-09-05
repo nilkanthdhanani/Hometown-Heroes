@@ -8,6 +8,10 @@
         margin-bottom: 60px;
     }
 
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+
     h3 {
         display: block;
         margin-left: 160px;
@@ -16,6 +20,12 @@
         @media (max-width: 1024px) {
             font-size: 33px;
             line-height: 43px;
+        }
+
+        @media (max-width: 576px) {
+            margin-left: 35px;
+            font-size: 16px;
+            line-height: 21px;
         }
     }
 
@@ -30,6 +40,12 @@
             line-height: 114px;
             margin: 16px 0 12px 0;
         }
+
+        @media (max-width: 576px) {
+            margin: 8px 0 6px 0;
+            font-size: 73px;
+            line-height: 55px;
+        }
     }
 
     p {
@@ -40,6 +56,11 @@
         @media (max-width: 1024px) {
             font-size: 33px;
             line-height: 43px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 21px;
         }
     }
 }

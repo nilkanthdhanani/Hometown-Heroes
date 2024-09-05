@@ -10,14 +10,17 @@ export default function Datenschutz() {
                         <h2>DATENSCHUTZ</h2>
                         <div className="datenschutz-div-text">
                             <h3>HOMETOWN HEROES</h3>
-                            <p>Vertreten durch: Tom von Below</p>
+                            <h4>Vertreten durch: Tom von Below</h4>
                             <h3>Verarbeitung personenbezogener Daten</h3>
                             <p>Wir verarbeiten personenbezogene Daten (nachfolgend „Daten“ genannt) nur soweit erforderlich und zum Zweck der Bereitstellung eines funktionsfähigen, nutzerfreundlichen Internetauftritts sowie der darin angebotenen Inhalte und Leistungen.</p>
                             <p>Gemäß Art. 4 Nr. 1 der Datenschutz-Grundverordnung (DSGVO) umfasst „Verarbeitung“ jeden Vorgang im Zusammenhang mit personenbezogenen Daten, ob automatisiert oder nicht, wie das Erheben, Erfassen, Organisieren, Speichern, Anpassen, Auslesen, Verwenden, Offenlegen durch Übermittlung, Verbreiten, Abgleichen, Einschränken, Löschen oder Vernichten.</p>
                             <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang, den Zweck, die Dauer und die Rechtsgrundlage der Verarbeitung personenbezogener Daten durch uns. Zudem erläutern wir den Einsatz von Fremdkomponenten, die zur Optimierung und Steigerung der Nutzungsqualität beitragen, wobei diese möglicherweise eigenverantwortlich Daten verarbeiten.</p>
                         </div>
-                        <div className="datenschutz-div-text">
+                        <div className="datenschutz-div-text default">
                             <h3>Gliederung: Informationen über  uns als Verantwortliche Rechte der Nutzer und Betroffenen Informationen zur Datenverarbeitung</h3>
+                        </div>
+                        <div className="datenschutz-div-text mobile">
+                            <h3>Gliederung: <br /> 1.&nbsp; Informationen über  uns als Verantwortliche <br /> 2.&nbsp; Rechte der Nutzer und Betroffenen <br /> 3.&nbsp; Informationen zur Datenverarbeitung</h3>
                         </div>
                         <div className="datenschutz-div-text">
                             <p>1. Informationen über uns als Verantwortliche Verantwortlicher Anbieter im Sinne des Datenschutzrechts:</p>

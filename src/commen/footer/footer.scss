@@ -93,4 +93,11 @@ footer {
             fill: var(--bgcolor);
         }
     }
+    .footer-logo-respo {
+        a {
+            svg {
+                fill: var(--bgcolor);
+            }
+        }
+    }
 }
