@@ -1,6 +1,6 @@
 
-import heroBanner from '../images/jpg/heroBanner.jpg'
-import aussBanner from '../images/jpg/aussBanner.jpg'
+import heroBanner from '../images/jpg/heroBanner.jpeg'
+import aussBanner from '../images/jpg/aussBanner.jpeg'
 import lwandle from '../images/jpg/lwandle.jpg'
 
 import theIdea from '../images/png/theIdea.png'
