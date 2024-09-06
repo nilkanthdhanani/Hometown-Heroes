@@ -17,65 +17,70 @@
 
     .hero-box {
         display: grid;
-        grid-template-columns: 425px 290px auto;
-        justify-content: space-between;
+        grid-template-columns: 40% 300px 1fr;
         gap: 30px;
 
         @media (max-width: 1024px) {
-            grid-template-columns: 240px 160px auto;
+            grid-template-columns: 42% 160px 1fr;
             justify-content: space-around;
             gap: 10px;
         }
 
         @media (max-width: 576px) {
             grid-template-columns: repeat(2, 1fr);
-            overflow: hidden;
         }
 
-        h1 {
-            @include heroHead;
-            word-break: break-word;
-
-            @media (max-width: 1024px) {
-                font-size: 100px;
-                line-height: 83px;
-            }
-            
+        .hero-box-head {
             @media (max-width: 576px) {
-                word-break: keep-all;
                 grid-column: span 2;
-                font-size: 174px;
-                line-height: 145px;
-                margin-bottom: 40px;
+                overflow: hidden;
+            }
+
+            h1 {
+                @include heroHead;
+                word-break: break-word;
+
+                @media (max-width: 1024px) {
+                    font-size: 100px;
+                    line-height: 83px;
+                }
+
+                @media (max-width: 576px) {
+                    word-break: keep-all;
+                    font-size: 174px;
+                    line-height: 145px;
+                    margin-bottom: 40px;
+                }
             }
         }
 
-        p {
-            @include heroPera;
-            word-break: break-word;
-            align-self: flex-end;
+        .hero-box-pera {
+            display: flex;
+            align-items: flex-end;
+            p {
+                @include heroPera;
+                word-break: break-word;
+                align-self: flex-end;
 
-            @media (max-width: 1024px) {
-                font-size: 30px;
-                line-height: 32px;
-            }
+                @media (max-width: 1024px) {
+                    font-size: 30px;
+                    line-height: 32px;
+                }
 
-            @media (max-width: 576px) {
-                margin-left: 20px;
-                max-width: 140px;
-                font-size: 25px;
-                line-height: 26px;
+                @media (max-width: 576px) {
+                    margin-left: 20px;
+                    max-width: 140px;
+                    font-size: 25px;
+                    line-height: 26px;
+                }
             }
         }
 
         .hero-box-image {
             margin-top: 7px;
-            max-width: 320px;
-            max-height: 428px;
-
-            @media (max-width: 1024px) {
-                max-width: 185px;
-            }
+            display: flex;
+            justify-content: flex-end;
+            max-height: 435px;
 
             @media (max-width: 576px) {
                 max-width: 150px;
@@ -84,7 +89,13 @@
             }
 
             img {
+                width: 100%;
                 height: 100%;
+                max-width: 320px;
+
+                @media (max-width: 1024px) {
+                    max-width: 185px;
+                }
             }
         }
     }

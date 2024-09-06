@@ -8,8 +8,12 @@ export default function HeroBanner() {
             <div className="hero-banner">
                 <div className="container">
                     <div className="hero-box">
-                        <h1>HOME TOWN HEROES</h1>
-                        <p>A PHOTOGRAPHIC JOURNEY THROUGH THE TOWNSHIPS OF CAPE TOWN</p>
+                        <div className="hero-box-head">
+                            <h1>HOME TOWN HEROES</h1>
+                        </div>
+                        <div className="hero-box-pera">
+                            <p>A PHOTOGRAPHIC JOURNEY THROUGH THE TOWNSHIPS OF CAPE TOWN</p>
+                        </div>
                         <div className="hero-box-image">
                             <img src={heroBanner} alt="heroBanner" />
                         </div>
