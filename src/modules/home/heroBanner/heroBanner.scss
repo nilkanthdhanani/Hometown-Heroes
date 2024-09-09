@@ -57,6 +57,7 @@
         .hero-box-pera {
             display: flex;
             align-items: flex-end;
+
             p {
                 @include heroPera;
                 word-break: break-word;
@@ -76,11 +77,10 @@
             }
         }
 
-        .hero-box-image {
-            margin-top: 7px;
+        .hero-box-image {   
             display: flex;
             justify-content: flex-end;
-            max-height: 435px;
+            align-items: flex-end;
 
             @media (max-width: 576px) {
                 max-width: 150px;
@@ -92,9 +92,11 @@
                 width: 100%;
                 height: 100%;
                 max-width: 320px;
+                max-height: 428px;
 
                 @media (max-width: 1024px) {
                     max-width: 185px;
+                    max-height: 245px;
                 }
             }
         }
