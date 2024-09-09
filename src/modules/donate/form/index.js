@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import SubmitForm from '../../../components/form';
 
 export default function Form() {
-    const [isChecked, setIsChecked] = useState(false);
-    const handleCheckboxChange = () => {
-        setIsChecked(!isChecked);
-    };
 
     return (
         <>
@@ -17,50 +14,7 @@ export default function Form() {
                         <div className="form-div">
                             <h3>HOMETOWN HEROES 2024</h3>
                             <p>Jetzt Gebot abgeben und das Projekt unterstützen. <br />Gib einfach deine Kontaktdaten in das Eingabefeld <br />und dein Gebot für das Bild ab.</p>
-                            <div className="form-input">
-                                <p>Startgebot pro Bild: 300€</p>
-                                <div className="form-input-box flex">
-                                    <div className="form-input-first">
-                                        <label>Vorname *</label>
-                                        <input type="text" placeholder="Vorname *" />
-                                    </div>
-                                    <div className="form-input-first">
-                                        <label>Nachname *</label>
-                                        <input type="text" placeholder="Nachname *" />
-                                    </div>
-                                </div>
-                                <div className="form-input-box">
-                                    <label>Firma</label>
-                                    <input type="text" placeholder="Firma" />
-                                </div>
-                                <div className="form-input-box">
-                                    <label>E-Mail-Adresse *</label>
-                                    <input type="text" placeholder="E-Mail-Adresse *" />
-                                </div>
-                            </div>
-                            <div className="form-input">
-                                <h4>Gebot</h4>
-                                <div className="form-input-box flex">
-                                    <div className="form-input-first">
-                                        <label>Gebot in € *</label>
-                                        <input type="number" placeholder="300€" />
-                                    </div>
-                                    <div className="form-input-first"></div>
-                                </div>
-                                <div className="form-input-check">
-                                    <input
-                                        type="checkbox"
-                                        id="agb"
-                                        name="agb"
-                                        value="agb"
-                                        checked={isChecked}
-                                        onChange={handleCheckboxChange}/>
-                                    <span>Es gelten die AGB. Ich habe die Datenschutzerklärung zur Kenntnis genommen.</span>
-                                </div>
-                            </div>
-                            <div className="form-button">
-                                <button>Gebot abgeben</button>
-                            </div>
+                            <SubmitForm />
                         </div>
                     </div>
                 </div>
