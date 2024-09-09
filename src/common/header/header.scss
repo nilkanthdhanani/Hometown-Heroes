@@ -73,10 +73,6 @@ header {
             @media (max-width: 576px) {
                 display: block;
             }
-
-            &.menu-shift-right {
-                right: 62px;
-            }
         }
     }
 }
@@ -103,5 +99,4 @@ header {
 
 .no-scroll {
     overflow: hidden;
-    padding-right: 20px;
 }
