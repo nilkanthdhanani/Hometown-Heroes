@@ -37,7 +37,7 @@ export default function Header() {
               <NavLink to="/donate">DONATE</NavLink>
               <NavLink to="/journey">FOLLOW THE JOURNEY</NavLink>
             </nav>
-            <div className="header-menu" onClick={toggleSidebar}>
+            <div className={`header-menu ${isSidebarOpen ? 'menu-shift-right' : ''}`} onClick={toggleSidebar}>
               <MenuSvg />
             </div>
           </div>

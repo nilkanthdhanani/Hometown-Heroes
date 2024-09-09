@@ -8,7 +8,7 @@ import DataSvg from '../../../assets/images/svg/dataSvg';
 
 export default function Sidebar({ isOpen, toggleSidebar }) {
     return (
-        <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <aside className={`${isOpen ? 'open' : ''}`}>
             <div className="close-svg" onClick={toggleSidebar}>
                 <CloseSvg />
             </div>
@@ -45,6 +45,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </aside>
     )
 }

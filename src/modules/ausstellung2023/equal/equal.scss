@@ -40,6 +40,10 @@
                 max-width: 378px;
             }
 
+            @media (max-width: 576px) {
+                max-width: 100%;
+            }
+
             p {
                 margin-bottom: 30px;
                 @include aussPera;

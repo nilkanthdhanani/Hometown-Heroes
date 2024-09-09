@@ -37,7 +37,7 @@ export default function Timer({ theme }) {
     }, []);
 
     return (
-        <div className={`timer ${theme}`}>
+        <section className={`timer ${theme}`}>
             <div className="container">
                 <div className="timer-header">
                     <h2>AUKTION 2024 NOCH</h2>
@@ -55,6 +55,6 @@ export default function Timer({ theme }) {
                     <span>SECONDS</span>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

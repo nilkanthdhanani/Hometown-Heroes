@@ -6,15 +6,13 @@ import JesamSvg from '../../../assets/images/svg/jesamSvg';
 
 export default function Sponsoren() {
     return (
-        <>
-            <div className="sponsoren">
-                <h2>SPONSOREN & PARTNER</h2>
-                <div className="sponsoren-logo">
-                    <Omrsvg />
-                    <CanonSvg />
-                    <JesamSvg />
-                </div>
+        <section className="sponsoren">
+            <h2>SPONSOREN & PARTNER</h2>
+            <div className="sponsoren-logo">
+                <Omrsvg />
+                <CanonSvg />
+                <JesamSvg />
             </div>
-        </>
+        </section>
     )
 }
