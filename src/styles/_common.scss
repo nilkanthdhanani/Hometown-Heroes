@@ -9,8 +9,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 h1,
