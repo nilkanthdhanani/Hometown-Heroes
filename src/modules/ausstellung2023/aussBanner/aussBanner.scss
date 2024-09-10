@@ -38,9 +38,19 @@
             @include aussHeadm;
             word-break: break-word;
 
+            @media (max-width: 1200px) {
+                font-size: 165px;
+                line-height: 145px;
+            }
+
             @media (max-width: 1024px) {
                 font-size: 115px;
                 line-height: 107px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 90px;
+                line-height: 80px;
             }
 
             @media (max-width: 576px) {
@@ -58,11 +68,9 @@
 
         .auss-banner-head {
             padding: 0 0 0 35px;
-            min-width: 386px;
 
             @media (max-width: 1024px) {
                 padding: 0 0 0 20px;
-                min-width: 222px;
             }
 
             @media (max-width: 576px) {
@@ -72,12 +80,6 @@
         }
 
         .auss-banner-div-intro {
-            min-width: 375px;
-
-            @media (max-width: 1024px) {
-                min-width: 215px;
-            }
-
             @media (max-width: 576px) {
                 order: 3;
                 padding-top: 95px;
