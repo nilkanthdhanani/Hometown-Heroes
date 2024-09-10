@@ -26,7 +26,6 @@
             @media (max-width: 576px) {
                 font-size: 98px;
                 line-height: 85px;
-                overflow: hidden;
             }
 
             &:last-child {
@@ -65,6 +64,10 @@
                 @media (max-width: 1024px) {
                     @include aussPeraRes;
                     margin: 3px 0;
+                }
+
+                @media (max-width: 576px) {
+                    @include aussPeraResMob;
                 }
             }
         }

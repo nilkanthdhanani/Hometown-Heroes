@@ -23,7 +23,8 @@
         }
 
         @media (max-width: 576px) {
-            grid-template-columns: 1fr;
+            grid-template-columns: none;
+            grid-template-rows: 222px 1fr;
             gap: 22px;
         }
 
@@ -35,7 +36,6 @@
             }
 
             @media (max-width: 576px) {
-                max-height: 222px;
                 display: flex;
                 justify-content: center;
             }
@@ -66,8 +66,7 @@
                 }
 
                 @media (max-width: 576px) {
-                    font-size: 14px;
-                    line-height: 20px;
+                    @include aussPeraResMob;
                     text-align: center;
                 }
             }

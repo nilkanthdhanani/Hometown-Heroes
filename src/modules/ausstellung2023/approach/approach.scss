@@ -42,7 +42,8 @@
                 }
 
                 @media (max-width: 576px) {
-                    grid-template-columns: 1fr;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto 410px;
                     gap: 0;
                     margin-bottom: 40px;
                 }
@@ -50,7 +51,6 @@
                 h2 {
                     @include aussHead;
                     margin-bottom: 125px;
-                    word-break: break-word;
 
                     @media (max-width: 1024px) {
                         font-size: 85px;
@@ -84,7 +84,7 @@
                         }
 
                         @media (max-width: 576px) {
-                            max-height: 510px;
+                            max-height: 100%;
                         }
                     }
                 }
@@ -98,8 +98,7 @@
                 }
 
                 @media (max-width: 576px) {
-                    font-size: 14px;
-                    line-height: 18px;
+                    @include aussPeraResMob;
                     text-align: center;
                 }
             }

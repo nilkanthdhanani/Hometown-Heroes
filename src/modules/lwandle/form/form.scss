@@ -55,7 +55,6 @@
             h2 {
                 @include donHead;
                 max-width: 368px;
-                word-break: break-word;
 
                 @media (max-width: 576px) {
                     text-align: center;

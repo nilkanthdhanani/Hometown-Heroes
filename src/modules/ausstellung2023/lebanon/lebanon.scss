@@ -38,6 +38,10 @@
                 @include aussPera;
                 text-align: right;
 
+                span {
+                    display: block;
+                }
+
                 @media (max-width: 1024px) {
                     @include aussPeraRes;
                     margin-bottom: 15px;
@@ -48,8 +52,7 @@
                 }
 
                 @media (max-width: 576px) {
-                    font-size: 14px;
-                    line-height: 20px;
+                    @include aussPeraResMob;
                     padding: 0 20px;
                     text-align: center;
                 }
@@ -66,14 +69,12 @@
             @media (max-width: 576px) {
                 order: 1;
                 margin: 0;
-                overflow: hidden;
             }
 
             h2 {
                 @include aussHeadLab;
                 text-align: center;
                 margin-bottom: 30px;
-                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 60px;
@@ -85,7 +86,6 @@
                     font-size: 98px;
                     line-height: 85px;
                     margin-bottom: 30px;
-                    word-break: normal;
                 }
             }
 

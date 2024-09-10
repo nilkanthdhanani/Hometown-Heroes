@@ -30,7 +30,6 @@
             h2 {
                 @include aussHeadLab;
                 margin-bottom: 30px;
-                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 75px;
@@ -78,8 +77,7 @@
                 }
 
                 @media (max-width: 576px) {
-                    font-size: 14px;
-                    line-height: 20px;
+                    @include aussPeraResMob;
                     padding: 0 20px;
                     text-align: center;
                 }

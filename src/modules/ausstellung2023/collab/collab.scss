@@ -43,7 +43,6 @@
             h2 {
                 @include aussHeadCol;
                 text-align: center;
-                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 75px;
@@ -128,23 +127,24 @@
                 }
             }
 
-            p {
+            .second + p {
                 margin-bottom: 30px;
+
+                @media (max-width: 1024px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
                 @include aussPera;
                 text-align: center;
 
                 @media (max-width: 1024px) {
                     @include aussPeraRes;
-                    margin-bottom: 15px;
-                }
-
-                &:last-child {
-                    margin-bottom: 0;
                 }
 
                 @media (max-width: 576px) {
-                    font-size: 14px;
-                    line-height: 20px;
+                    @include aussPeraResMob;
                     text-align: center;
                     padding: 0 20px;
                 }

@@ -39,7 +39,6 @@
         h1 {
             @include aussHeadm;
             line-height: 178px;
-            word-break: break-word;
 
             @media (max-width: 1024px) {
                 font-size: 132px;

@@ -13,8 +13,8 @@ export default function Collab() {
                             <img src={collabration1} alt="collabration1" />
                             <p>HOMETOWN HEROES X YOUNG BAFANA</p>
                         </div>
-                        <p>Our journey with Hometown Heroes has been enriched by valuable partnerships with organizations that share our vision for positive change. <br />
-                            Young Bafana, a non-profit organization dedicated to the holistic development of underprivileged youth in South Africa, was our inaugural partner. Through our first Hometown Heroes exhibition, we raised funds to support their programs, reinforcing our commitment to making a meaningful impact by selling our prints at the gallery.</p>
+                        <p className="margin-none">Our journey with Hometown Heroes has been enriched by valuable partnerships with organizations that share our vision for positive change.</p>
+                        <p>Young Bafana, a non-profit organization dedicated to the holistic development of underprivileged youth in South Africa, was our inaugural partner. Through our first Hometown Heroes exhibition, we raised funds to support their programs, reinforcing our commitment to making a meaningful impact by selling our prints at the gallery.</p>
                     </div>
                     <div className="collab-div">
                         <h2>COLLABORATIONS</h2>

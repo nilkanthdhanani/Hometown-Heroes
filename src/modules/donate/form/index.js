@@ -12,7 +12,9 @@ export default function Form() {
                     </div>
                     <div className="form-div">
                         <h3>HOMETOWN HEROES 2024</h3>
-                        <p>Jetzt Gebot abgeben und das Projekt unterstützen. <br />Gib einfach deine Kontaktdaten in das Eingabefeld <br />und dein Gebot für das Bild ab.</p>
+                        <p>Jetzt Gebot abgeben und das Projekt unterstützen.</p>
+                        <p>Gib einfach deine Kontaktdaten in das Eingabefeld</p>
+                        <p>und dein Gebot für das Bild ab.</p>
                         <SubmitForm />
                     </div>
                 </div>

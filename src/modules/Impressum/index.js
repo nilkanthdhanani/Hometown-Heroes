@@ -14,17 +14,19 @@ export default function Impressum() {
                         </div>
                         <div className="impressum-link-div">
                             <h3>HOMETOWN HEROES</h3>
-                            <h4>Vertreten durch: <br /> Tom von Below</h4>
+                            <h4>Vertreten durch:</h4>
+                            <h4>Tom von Below</h4>
                         </div>
                         <div className="impressum-link-div">
                             <h3>Kontakt:</h3>
-                            <h4>Frickestraße 83 <br />
-                                20251 Hamburg</h4>
+                            <h4>Frickestraße 83</h4>
+                            <h4>20251 Hamburg</h4>
                         </div>
                         <div className="impressum-link-div">
-                            <h3>E-Mail: <br />
-                                info@hometown-heroes.de</h3>
-                            <h4>Haftungsausschluss: <br /> Haftung für Inhalte</h4>
+                            <h3>E-Mail:</h3>
+                            <h3>info@hometown-heroes.de</h3>
+                            <h4>Haftungsausschluss:</h4>
+                            <h4>Haftung für Inhalte</h4>
                         </div>
                     </div>
                 </div>

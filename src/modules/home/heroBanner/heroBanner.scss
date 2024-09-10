@@ -38,7 +38,6 @@
 
             h1 {
                 @include heroHead;
-                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 100px;

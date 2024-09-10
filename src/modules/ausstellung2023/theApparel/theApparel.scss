@@ -14,10 +14,6 @@
         }
 
         .apparel-head {
-            @media (max-width: 576px) {
-                overflow: hidden;
-            }
-
             h2 {
                 @include aussHead;
                 text-align: center;
@@ -50,8 +46,7 @@
             }
 
             @media (max-width: 576px) {
-                font-size: 14px;
-                line-height: 20px;
+                @include aussPeraResMob;
                 text-align: center;
                 padding: 0 20px;
             }

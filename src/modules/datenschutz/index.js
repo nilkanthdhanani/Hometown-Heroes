@@ -10,7 +10,7 @@ export default function Datenschutz() {
                     <div className="datenschutz-div-text">
                         <h3>HOMETOWN HEROES</h3>
                         <h4>Vertreten durch: Tom von Below</h4>
-                        <h3>Verarbeitung personenbezogener Daten</h3>
+                        <h3 className="margin-add">Verarbeitung personenbezogener Daten</h3>
                         <p>Wir verarbeiten personenbezogene Daten (nachfolgend „Daten“ genannt) nur soweit erforderlich und zum Zweck der Bereitstellung eines funktionsfähigen, nutzerfreundlichen Internetauftritts sowie der darin angebotenen Inhalte und Leistungen.</p>
                         <p>Gemäß Art. 4 Nr. 1 der Datenschutz-Grundverordnung (DSGVO) umfasst „Verarbeitung“ jeden Vorgang im Zusammenhang mit personenbezogenen Daten, ob automatisiert oder nicht, wie das Erheben, Erfassen, Organisieren, Speichern, Anpassen, Auslesen, Verwenden, Offenlegen durch Übermittlung, Verbreiten, Abgleichen, Einschränken, Löschen oder Vernichten.</p>
                         <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang, den Zweck, die Dauer und die Rechtsgrundlage der Verarbeitung personenbezogener Daten durch uns. Zudem erläutern wir den Einsatz von Fremdkomponenten, die zur Optimierung und Steigerung der Nutzungsqualität beitragen, wobei diese möglicherweise eigenverantwortlich Daten verarbeiten.</p>
@@ -19,11 +19,16 @@ export default function Datenschutz() {
                         <h3>Gliederung: Informationen über  uns als Verantwortliche Rechte der Nutzer und Betroffenen Informationen zur Datenverarbeitung</h3>
                     </div>
                     <div className="datenschutz-div-text mobile">
-                        <h3>Gliederung: <br /> 1.&nbsp; Informationen über  uns als Verantwortliche <br /> 2.&nbsp; Rechte der Nutzer und Betroffenen <br /> 3.&nbsp; Informationen zur Datenverarbeitung</h3>
+                        <h3>Gliederung:</h3>
+                        <h3>1.&nbsp; Informationen über  uns als Verantwortliche</h3>
+                        <h3>2.&nbsp; Rechte der Nutzer und Betroffenen</h3>
+                        <h3>3.&nbsp; Informationen zur Datenverarbeitung</h3>
                     </div>
                     <div className="datenschutz-div-text">
                         <p>1. Informationen über uns als Verantwortliche Verantwortlicher Anbieter im Sinne des Datenschutzrechts:</p>
-                        <p>Tom von Below <br /> Frickestraße 83 20251 Hamburg <br /> E-Mail: info@hometown-heroes.de</p>
+                        <p>Tom von Below</p>
+                        <p>Frickestraße 83 20251 Hamburg</p>
+                        <p>E-Mail: info@hometown-heroes.de</p>
                     </div>
                     <div className="datenschutz-div-text">
                         <p>2. Rechte der Nutzer und Betroffenen</p>
@@ -43,12 +48,12 @@ export default function Datenschutz() {
                         <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f) DSGVO.</p>
                         <p>Cookies</p>
 
-                        <p>a) Session-Cookies <br />
-                            Wir verwenden Cookies, um die Benutzerfreundlichkeit, Effektivität und Sicherheit unseres Internetauftritts zu erhöhen. Diese Cookies werden nach dem Schließen des Browsers gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. b) DSGVO bzw. Art. 6 Abs. 1 lit. f) DSGVO bei berechtigtem Interesse.</p>
-                        <p>b) Drittanbieter-Cookies <br />
-                            Auf unserer Website kommen möglicherweise Cookies von Partnerunternehmen zum Einsatz. Details zu diesen Cookies finden Sie in den nachfolgenden Informationen.</p>
-                        <p>c) Cookie-Einstellungen <br />
-                            Sie können die Installation von Cookies durch Ihren Browser verhindern oder einschränken und bereits gespeicherte Cookies löschen. Beachten Sie, dass dies die Funktionalität unseres Internetauftritts einschränken kann.</p>
+                        <p>a) Session-Cookies </p>
+                        <p>Wir verwenden Cookies, um die Benutzerfreundlichkeit, Effektivität und Sicherheit unseres Internetauftritts zu erhöhen. Diese Cookies werden nach dem Schließen des Browsers gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. b) DSGVO bzw. Art. 6 Abs. 1 lit. f) DSGVO bei berechtigtem Interesse.</p>
+                        <p>b) Drittanbieter-Cookies </p>
+                        <p>Auf unserer Website kommen möglicherweise Cookies von Partnerunternehmen zum Einsatz. Details zu diesen Cookies finden Sie in den nachfolgenden Informationen.</p>
+                        <p>c) Cookie-Einstellungen </p>
+                        <p>Sie können die Installation von Cookies durch Ihren Browser verhindern oder einschränken und bereits gespeicherte Cookies löschen. Beachten Sie, dass dies die Funktionalität unseres Internetauftritts einschränken kann.</p>
 
                         <p>Kontaktaufnahme</p>
                         <p>Bei Kontaktaufnahme per Formular oder E-Mail werden die angegebenen Daten zur Bearbeitung Ihrer Anfrage verwendet. Ohne diese Angaben können wir Ihre Anfrage möglicherweise nicht beantworten.</p>

@@ -48,8 +48,7 @@
             }
 
             @media (max-width: 576px) {
-                font-size: 14px;
-                line-height: 20px;
+                @include aussPeraResMob;
             }
         }
 
@@ -64,8 +63,7 @@
             }
 
             @media (max-width: 576px) {
-                font-size: 14px;
-                line-height: 20px;
+                @include aussPeraResMob;
             }
         }
     }

@@ -11,8 +11,12 @@ export default function AussImages() {
                         <img src={aussImg1} alt="aussImg1" />
                     </div>
                     <div className="auss-images-div2">
-                        <img src={aussImg2} alt="aussImg1" />
-                        <img src={aussImg3} alt="aussImg1" />
+                        <div className="auss-images-div2-img1">
+                            <img src={aussImg2} alt="aussImg1" />
+                        </div>
+                        <div className="auss-images-div2-img1">
+                            <img src={aussImg3} alt="aussImg1" />
+                        </div>
                     </div>
                 </div>
             </div>
