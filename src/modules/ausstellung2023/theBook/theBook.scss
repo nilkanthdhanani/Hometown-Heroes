@@ -104,13 +104,16 @@
         }
 
         .sample-head {
-            overflow: hidden;
-            
+            @media (max-width: 576px) {
+                overflow: hidden;
+            }
+
             h2 {
                 @include aussHead;
                 text-align: center;
                 line-height: 110px;
                 margin: 100px 0 60px 0;
+                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 85px;

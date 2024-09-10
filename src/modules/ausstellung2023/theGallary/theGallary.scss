@@ -23,13 +23,13 @@
             @media (max-width: 576px) {
                 position: relative;
                 margin-bottom: 48px;
-                overflow: hidden;
             }
 
             h2 {
                 @include aussHeadGal;
                 text-align: center;
                 position: relative;
+                word-break: break-word;
 
                 @media (max-width: 1024px) {
                     font-size: 85px;
@@ -39,7 +39,6 @@
                 @media (max-width: 576px) {
                     font-size: 100px;
                     line-height: 86px;
-                    white-space: nowrap;
                 }
             }
         }
