@@ -8,7 +8,7 @@ export default function Lwandle() {
         <>
             <Form />
             <ArtistName />
-            <Timer theme="light" />
+            <Timer theme="light lwandle" />
         </>
     )
 }

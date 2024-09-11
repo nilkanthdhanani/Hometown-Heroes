@@ -35,7 +35,7 @@ export default function Timer({ theme }) {
         const timer = setInterval(calculateTimeLeft, 1000);
         return () => clearInterval(timer);
     }, []);
-
+    
     return (
         <section className={`timer ${theme}`}>
             <div className="container">

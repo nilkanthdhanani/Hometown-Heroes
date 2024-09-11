@@ -2,14 +2,11 @@
 
 .artist-name {
     overflow: hidden;
-    margin-bottom: 50px;
-
-    @media (max-width: 1024px) {
-        margin-bottom: 60px;
-    }
+    padding-bottom: 110px;
+    position: relative;
 
     @media (max-width: 576px) {
-        margin-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     h3 {
@@ -38,29 +35,34 @@
         @media (max-width: 1024px) {
             font-size: 150px;
             line-height: 114px;
-            margin: 16px 0 12px 0;
+            margin: 16px 0 20px 0;
         }
 
         @media (max-width: 576px) {
-            margin: 8px 0 6px 0;
+            margin: 8px 0;
             font-size: 73px;
             line-height: 55px;
         }
     }
 
-    p {
-        @include font45b;
-        white-space: nowrap;
-        text-align: right;
+    .artist-name-detail {
+        position: absolute;
+        left: 50%;
 
-        @media (max-width: 1024px) {
-            font-size: 33px;
-            line-height: 43px;
-        }
+        p {
+            @include font45b;
+            white-space: nowrap;
+            text-align: right;
 
-        @media (max-width: 576px) {
-            font-size: 16px;
-            line-height: 21px;
+            @media (max-width: 1024px) {
+                font-size: 33px;
+                line-height: 43px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 21px;
+            }
         }
     }
 }

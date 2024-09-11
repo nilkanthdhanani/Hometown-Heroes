@@ -23,7 +23,8 @@
 
         @media (max-width: 1024px) {
             grid-template-columns: 240px auto 250px;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 30px;
         }
 
         @media (max-width: 768px) {

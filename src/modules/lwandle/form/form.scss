@@ -56,10 +56,19 @@
                 @include donHead;
                 max-width: 368px;
 
+                @media (max-width: 768px) {
+                    font-size: 100px;
+                }
+
                 @media (max-width: 576px) {
-                    text-align: center;
+                    font-size: 145px;
                     max-width: 100%;
                     word-break: keep-all;
+                }
+
+                @media (max-width: 390px) {
+                    font-size: 100px;
+                    line-height: 85px;
                 }
             }
         }

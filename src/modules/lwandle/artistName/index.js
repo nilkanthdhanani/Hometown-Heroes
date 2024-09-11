@@ -6,7 +6,9 @@ export default function ArtistName() {
         <section className="artist-name">
             <h3>ARTIST</h3>
             <h2>TOM VON BELOW</h2>
-            <p>A PHOTOGRAPHIC JOURNEY THROUGH THE TOWNSHIPS OF  CAPE TOWNMEDIA BRANDING</p>
+            <div className="artist-name-detail">
+                <p>A PHOTOGRAPHIC JOURNEY THROUGH THE TOWNSHIPS OF  CAPE TOWNMEDIA BRANDING</p>
+            </div>
         </section>
     )
 }
