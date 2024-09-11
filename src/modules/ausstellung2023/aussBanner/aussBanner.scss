@@ -78,6 +78,12 @@
         }
 
         .auss-banner-div-intro {
+            padding-top: 70px;
+
+            @media (max-width: 1024px) {
+                padding-top: 40px;
+            }
+            
             @media (max-width: 576px) {
                 order: 3;
                 padding-top: 95px;
