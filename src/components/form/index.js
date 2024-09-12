@@ -104,11 +104,12 @@ export default function SubmitForm() {
                     <div className="form-input-check">
                         <input
                             type="checkbox"
-                            id="agb"
-                            name="agb"
-                            value="agb"
+                            id="gelten"
+                            name="gelten"
+                            value="gelten"
                             checked={isChecked}
                             onChange={handleCheckboxChange}
+                            aria-label="checkbox"
                             required />
                         <span>Es gelten die AGB. Ich habe die Datenschutzerklärung zur Kenntnis genommen.</span>
                     </div>

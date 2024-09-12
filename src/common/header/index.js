@@ -29,7 +29,7 @@ export default function Header() {
         <div className="containerH">
           <div className="header-div">
             <div className="header-div-logo">
-              <NavLink to="/"><Logo /></NavLink>
+              <NavLink to="/" aria-label="Homepage"><Logo /></NavLink>
             </div>
             <nav>
               <NavLink to="/auss2023">AUSSTELLUNG 2023</NavLink>

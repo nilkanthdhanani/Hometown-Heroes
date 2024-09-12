@@ -37,7 +37,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                         <NavLink to={"/datenschutz"} onClick={toggleSidebar}>DATENSCHUTZ</NavLink>
                     </div>
                     <div className="footer-logo-respo">
-                        <NavLink to={'/'} onClick={toggleSidebar}>
+                        <NavLink to={'/'} aria-label="Homepage" onClick={toggleSidebar}>
                             <PowerdSvg />
                             <JesamSvgFooter />
                             <DataSvg />

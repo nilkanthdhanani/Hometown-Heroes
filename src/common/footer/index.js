@@ -19,10 +19,10 @@ export default function Footer() {
           <NavLink to={"/datenschutz"}>DATENSCHUTZ</NavLink>
         </div>
         <div className="footer-logo">
-          <NavLink to={'/'}><FooterLogo /></NavLink>
+          <NavLink to={'/'} aria-label="Homepage"><FooterLogo /></NavLink>
         </div>
         <div className="footer-logo-respo">
-          <NavLink to={'/'}>
+          <NavLink to={'/'} aria-label="Homepage">
             <PowerdSvg />
             <JesamSvgFooter />
             <DataSvg />
