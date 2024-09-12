@@ -6,9 +6,9 @@ export const isHomeOrImpressum = (pathname) => homeAndImpressum.includes(pathnam
 
 export const getStylesForPage = (pathname) => {
   if (isSpecialPage(pathname)) {
-    return { backgroundColor: '#1a1a1a', color: '#fff' };
+    return { backgroundColor: '#1a1a1a', color: '#f6f1e5' };
   }
-  return { backgroundColor: '#fff', color: '#1b1b1b' };
+  return { backgroundColor: '#f6f1e5', color: '#1b1b1b' };
 };
 
 export const shouldShowFooter = (pathname) => pathname !== '/auss2024';
