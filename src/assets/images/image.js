@@ -1,7 +1,7 @@
 
 import heroBanner from '../images/jpg/heroBanner.jpeg'
 import aussBanner from '../images/jpg/aussBanner.jpeg'
-import lwandle from '../images/jpg/lwandle.jpg'
+import lwandle from '../images/jpg/lwandle.jpeg'
 
 import theIdea from '../images/png/theIdea.png'
 import approach1 from '../images/png/approach1.png'
