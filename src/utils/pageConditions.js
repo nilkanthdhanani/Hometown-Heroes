@@ -11,4 +11,4 @@ export const getStylesForPage = (pathname) => {
   return { backgroundColor: '#f6f1e5', color: '#1b1b1b' };
 };
 
-export const shouldShowFooter = (pathname) => pathname !== '/auss2024';
+export const shouldShowFooter = (pathname) => pathname !== '/auss2024'  && pathname !== '/lwandle';

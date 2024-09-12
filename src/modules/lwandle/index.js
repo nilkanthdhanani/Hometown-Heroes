@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Form from './form';
 import ArtistName from './artistName';
 import Timer from '../../components/timer';
+import Footer from '../../common/footer';
 
 export default function Lwandle() {
     const [formLoaded, setFormLoaded] = useState(false);
@@ -17,6 +18,7 @@ export default function Lwandle() {
                 <>
                     <ArtistName />
                     <Timer theme="light lwandle" />
+                    <Footer />
                 </>
             )}
         </>
