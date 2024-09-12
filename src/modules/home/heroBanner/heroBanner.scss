@@ -5,6 +5,10 @@
 
     @media (max-width: 1024px) {
         padding: 70px 0 60px 0;
+
+        .container {
+            max-width: 730px;
+        }
     }
 
     @media (max-width: 576px) {
@@ -22,8 +26,11 @@
 
         @media (max-width: 1024px) {
             grid-template-columns: 42% 160px 1fr;
-            justify-content: space-around;
             gap: 10px;
+        }
+
+        @media (max-width: 610px) {
+            grid-template-columns: 45% 160px 1fr;
         }
 
         @media (max-width: 576px) {
