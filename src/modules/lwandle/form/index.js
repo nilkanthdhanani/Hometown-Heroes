@@ -19,8 +19,8 @@ export default function Form({ onFormLoad }) {
     return (
         <section className="form">
             <div className="container3">
-                <div className="form-main">
-                    <div className="form-main-img" onLoad={handleImageLoad}>
+                <div className="form-main" onLoad={handleImageLoad}>
+                    <div className="form-main-img">
                         <img src={lwandle} alt="form" />
                     </div>
                     {imageLoaded && (
