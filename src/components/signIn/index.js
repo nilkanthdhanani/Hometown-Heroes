@@ -7,11 +7,44 @@ import EyecloseIcon from './eyecloseIcon';
 export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isPasswordVisible, setIsPasswordVisible] = useState(false); // Track password visibility
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    const [errors, setErrors] = useState({ email: '', password: '' });
+
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Form submit handler
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const newErrors = { email: '', password: '' };
+
+        // Validate email field
+        if (!email) {
+            newErrors.email = 'Field is required';
+        } else if (!emailRegex.test(email)) {
+            newErrors.email = 'Invalid email address';
+        }
+
+        // Validate password field
+        if (!password) {
+            newErrors.password = 'Field is required';
+        } else if (password.length < 6) {
+            newErrors.password = 'Password must be at least 6 characters long';
+        }
+
+        setErrors(newErrors);
+
+        // Only submit if there are no errors
+        if (!newErrors.email && !newErrors.password) {
+            console.log('Form submitted:', { email, password });
+        }
+    };
 
     // Handler to clear email input
     const clearEmail = () => {
         setEmail('');
+        setErrors((prevErrors) => ({ ...prevErrors, email: '' })); // Clear email error when input is cleared
     };
 
     // Handler to toggle password visibility
@@ -25,16 +58,18 @@ export default function SignIn() {
             <div className="signin-form">
                 <div className="signin-form-div">
                     <h3>Sign In</h3>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="signin-form-input">
                             <input
                                 type="email"
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => {
+                                    setEmail(e.target.value);
+                                    setErrors((prevErrors) => ({ ...prevErrors, email: '' })); // Clear error on input change
+                                }}
                                 placeholder="Email"
                             />
-                            <span>Field is required</span>
-                            <span>Invalid email address</span>
+                            {errors.email && <span>{errors.email}</span>}
                             {email && (
                                 <div className="side-icon" onClick={clearEmail}>
                                     <CloseIcon />
@@ -44,15 +79,17 @@ export default function SignIn() {
                         </div>
                         <div className="signin-form-input">
                             <input
-                                type={isPasswordVisible ? 'text' : 'password'}  // Toggle input type
+                                type={isPasswordVisible ? 'text' : 'password'}
                                 value={password}
-                                onChange={(e) => setPassword(e.target.value)}
+                                onChange={(e) => {
+                                    setPassword(e.target.value);
+                                    setErrors((prevErrors) => ({ ...prevErrors, password: '' })); // Clear error on input change
+                                }}
                                 placeholder="Password"
                             />
-                            <span>Field is required</span>
-                            <span>Invalid password</span>
+                            {errors.password && <span>{errors.password}</span>}
                             <div className="side-icon" onClick={togglePasswordVisibility}>
-                                {isPasswordVisible ? <EyecloseIcon /> : <EyeIcon />} {/* Toggle icon */}
+                                {isPasswordVisible ? <EyecloseIcon /> : <EyeIcon />}
                                 <span>{isPasswordVisible ? 'Hide' : 'Show'}</span>
                             </div>
                         </div>
