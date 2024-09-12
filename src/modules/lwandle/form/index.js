@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './form.scss';
 import { lwandle } from '../../../assets/images/image';
 import SubmitForm from '../../../components/form';
 
-export default function Form() {
+export default function Form({ onFormLoad }) {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     const handleImageLoad = () => {
         setImageLoaded(true);
     };
 
+    useEffect(() => {
+        if (imageLoaded && onFormLoad) {
+            onFormLoad();
+        }
+    }, [imageLoaded, onFormLoad]);
+
     return (
         <section className="form">
             <div className="container3">
                 <div className="form-main">
-                    <div className="form-main-img">
-                        <img src={lwandle} alt="form" onLoad={handleImageLoad} />
+                    <div className="form-main-img" onLoad={handleImageLoad}>
+                        <img src={lwandle} alt="form" />
                     </div>
                     {imageLoaded && (
                         <div className="form-div">

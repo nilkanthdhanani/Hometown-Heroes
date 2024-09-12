@@ -25,13 +25,21 @@
         }
 
         .form-main-img {
+            min-height: 610px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+            @media (max-width: 1024px) {
+                min-height: 375px;
+            }
+            
             @media (max-width: 576px) {
-                display: flex;
+                min-height: auto;
                 justify-content: center;
             }
 
             img {
-                height: 100%;
                 max-height: 600px;
 
                 @media (max-width: 1024px) {
@@ -76,6 +84,7 @@
         .form-div {
             h3 {
                 @include font36b;
+                line-height: 54px;
                 margin-bottom: 10px;
                 word-break: break-word;
 
