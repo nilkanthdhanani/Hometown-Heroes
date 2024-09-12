@@ -8,7 +8,6 @@ import Journey from "../modules/journey";
 import Donate from "../modules/donate";
 import Ausstellung2024 from "../modules/ausstellung2024";
 import Lwandle from "../modules/lwandle";
-import SignIn from "../components/signIn";
 
 const router = createBrowserRouter([
     {
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
                 path: "/lwandle",
                 element: <Lwandle />
             },
-            {
-                path: "/signin",
-                element: <SignIn />
-            }
         ]
     }
 ])
