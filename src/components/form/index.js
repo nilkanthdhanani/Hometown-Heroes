@@ -115,7 +115,7 @@ export default function SubmitForm() {
                     </div>
                 </div>
                 <div className="form-button">
-                    <button>Gebot abgeben</button>
+                    <button type="button" >Gebot abgeben</button>
                 </div>
             </form>
         </>
