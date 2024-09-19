@@ -1,17 +1,71 @@
-@import './common';
+@import "./common";
+@import "./theme/theme";
+@import "./mixin/mixin";
+@import "./typography/typography";
+@import "./container/container";
+@import "./font/font";
+@import "./button/button";
+@import "./keyframes/keyframes.scss";
+@import "./breakpoints/breakpoint";
 
-@import './theme/theme';
+* {
+    font-family: "Big Shoulders Display", sans-serif;
+    box-sizing: border-box;
+}
 
-@import './mixin/mixin';
+body {
+    margin: 0;
+    padding: 0;
+}
 
-@import './typography/typography';
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
-@import './container/container';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
-// @import './font/font';
+h1,
+h2 {
+    word-break: break-word;
+}
 
-@import './button/button';
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
 
-@import './keyframes/keyframes.scss';
+a {
+    text-decoration: none;
+}
 
-@import './breakpoints/breakpoint';
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.footer-space {
+    @media (max-width: 1024px) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
