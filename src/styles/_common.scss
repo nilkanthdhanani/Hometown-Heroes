@@ -1,0 +1,60 @@
+* {
+    font-family: "Big Shoulders Display", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1, h2 {
+    word-break: break-word;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.footer-space {
+    @media (max-width: 1024px) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
